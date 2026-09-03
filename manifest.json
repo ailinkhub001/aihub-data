@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "generated_at": "2026-09-03T17:20:01Z",
+  "revision": "2026-09-03T17:20:01Z",
+  "app": {
+    "name": "aihub",
+    "version": "0.3.4",
+    "channel": "stable",
+    "critical": false,
+    "published_at": "2026-09-03T17:20:01Z",
+    "notes": "更新依赖，终端矩阵支持行模式布局，优化安装命令执行"
+  },
+  "artifacts": [
+    {
+      "path": "catalog/ai_apps.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps.json",
+      "sha256": "507bdda6f4e48b6ce52ffc7aedc502ae8cae91aa4743b3adf35693cdcd682604",
+      "size": 125458,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/ai_apps_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps_en.json",
+      "sha256": "810a9cee4d682035bd61433f389b7e86ad3fd96e4566a5a1ba2f86568d9cb293",
+      "size": 6118,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/alias_map.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/alias_map.json",
+      "sha256": "92f4b13087603d70c2b3cabad8e83dc5371c8a9edb33b6672cff9826e102dd54",
+      "size": 1729,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check.json",
+      "sha256": "b16badb0762cc7d4abb6d1b5ef5c79d221a83bfe9dd8ca122fa9fd6f023427f8",
+      "size": 31453,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check_en.json",
+      "sha256": "d1e53392db7e2bea1e87bf05a87cd01237e2998cc01168a8ed0014fc0ce83f4f",
+      "size": 1496,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/networks.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/networks.json",
+      "sha256": "2c9bbed0676d358e2f2b0558c04abaf8f41ed2e2af2f4ebf8fd86f34c0f4435a",
+      "size": 12215,
+      "kind": "catalog"
+    },
+    {
+      "path": "aihub-0.3.4-windows-x64-setup.exe",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.3.4/aihub-0.3.4-windows-x64-setup.exe",
+      "sha256": "863676ca739ef729fec277f8ba58f5344013263d981cf93adf19981bffe8d49e",
+      "size": 23099834,
+      "kind": "installer",
+      "os": "windows",
+      "arch": "x64"
+    }
+  ]
+}
