@@ -1,0 +1,1209 @@
+{
+  "version": 1,
+  "checks": {
+    "git": {
+      "display_name": "Git",
+      "homepage": "https://git-scm.com",
+      "description": "分布式版本控制系统，软件开发的事实标准。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "git"
+      ],
+      "required_version": null,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.huaweicloud.com/git-for-windows/v2.55.0.windows.5/Git-2.55.0.5-64-bit.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/Git-2.55.0.5-64-bit.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.huaweicloud.com/git-for-windows/v2.55.0.windows.5/Git-2.55.0.5-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/Git-2.55.0.5-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "chocolatey",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "scoop",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "zypper",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apk",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Git.Git"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://git-scm.com/install"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.huaweicloud.com/git-for-windows/v2.55.0.windows.5/Git-2.55.0.5-64-bit.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/Git-2.55.0.5-64-bit.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.huaweicloud.com/git-for-windows/v2.55.0.windows.5/Git-2.55.0.5-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/Git-2.55.0.5-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "sh",
+          "args": [
+            "-c",
+            "brew update && brew upgrade git || brew install git"
+          ],
+          "requires": [
+            "brew"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "chocolatey",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "scoop",
+          "id": "git"
+        },
+        {
+          "kind": "command",
+          "platforms": 4,
+          "program": "sh",
+          "args": [
+            "-c",
+            "apt update && apt install --only-upgrade -y git"
+          ],
+          "requires": [
+            "apt"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "zypper",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apk",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Git.Git"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://git-scm.com/install"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Git.Git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "chocolatey",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "scoop",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "zypper",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apk",
+          "id": "git"
+        },
+        {
+          "kind": "uninstaller",
+          "platforms": 1,
+          "id": "unins*.exe",
+          "args": [
+            "/SILENT",
+            "/NORESTART"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Git"
+        }
+      ],
+      "version_info": {
+        "latest": "2.55.0",
+        "method": "github_tags",
+        "fetched_at": "2026-09-05T15:51:04Z",
+        "confidence": "high"
+      },
+      "updatable": true
+    },
+    "node": {
+      "display_name": "Node.js",
+      "homepage": "https://nodejs.org",
+      "description": "基于 V8 的 JavaScript 运行时。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "node"
+      ],
+      "required_version": "22.0.0",
+      "satisfies_version": "22.0.0",
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v22.23.2/node-v22.23.2-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://nodejs.org/dist/v22.23.2/node-v22.23.2-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v22.23.2/node-v22.23.2-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://nodejs.org/dist/v22.23.2/node-v22.23.2-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v22.23.2/node-v22.23.2.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://nodejs.org/dist/v22.23.2/node-v22.23.2.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "node"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "nvm",
+          "args": [
+            "install",
+            "22"
+          ],
+          "requires": [
+            "nvm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "fnm",
+          "args": [
+            "install",
+            "22"
+          ],
+          "requires": [
+            "fnm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "nodejs"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "OpenJS.NodeJS.22"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://nodejs.org/en/download"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v22.23.2/node-v22.23.2-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://nodejs.org/dist/v22.23.2/node-v22.23.2-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v22.23.2/node-v22.23.2-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://nodejs.org/dist/v22.23.2/node-v22.23.2-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v22.23.2/node-v22.23.2.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://nodejs.org/dist/v22.23.2/node-v22.23.2.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "node"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "nodejs"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "OpenJS.NodeJS.22"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://nodejs.org/en/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "node"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "OpenJS.NodeJS.22"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "nodejs"
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Node.js"
+        }
+      ],
+      "version_info": {
+        "latest": "22.23.2",
+        "method": "api",
+        "branches": [
+          {
+            "branch": "26",
+            "latest": "26.8.1",
+            "eol": false,
+            "lts": true
+          },
+          {
+            "branch": "24",
+            "latest": "24.20.0",
+            "eol": false,
+            "lts": true
+          },
+          {
+            "branch": "22",
+            "latest": "22.23.2",
+            "eol": false,
+            "lts": true
+          }
+        ],
+        "fetched_at": "2026-09-05T15:51:05Z",
+        "confidence": "high"
+      },
+      "updatable": false
+    },
+    "npm": {
+      "display_name": "npm",
+      "homepage": "https://www.npmjs.com",
+      "description": "Node 包管理器，随 Node.js 一起安装。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "npm"
+      ],
+      "required_version": null,
+      "install": [],
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "install",
+            "-g",
+            "npm"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "uninstall": [],
+      "updatable": false
+    },
+    "python": {
+      "display_name": "Python",
+      "homepage": "https://www.python.org",
+      "description": "通用编程语言，广泛用于脚本、数据与 AI。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "python",
+        "python3"
+      ],
+      "required_version": "3.12.0",
+      "satisfies_version": "3.12.0",
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/python-release/windows/python-3.13.15-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/python-release/windows/python-3.13.15-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-macos11.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "python"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "python3"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Python.Python.3.12"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.python.org/downloads/"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/python-release/windows/python-3.13.15-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/python-release/windows/python-3.13.15-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-macos11.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "python"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "python3"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Python.Python.3.12"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.python.org/downloads/"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "python"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Python.Python.3.12"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "python3"
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Python"
+        }
+      ],
+      "version_info": {
+        "latest": "3.13.15",
+        "method": "api",
+        "branches": [
+          {
+            "branch": "3.14",
+            "latest": "3.14.7",
+            "eol": false,
+            "lts": false
+          },
+          {
+            "branch": "3.13",
+            "latest": "3.13.15",
+            "eol": false,
+            "lts": false
+          },
+          {
+            "branch": "3.12",
+            "latest": "3.12.14",
+            "eol": false,
+            "lts": false
+          }
+        ],
+        "fetched_at": "2026-09-05T15:51:06Z",
+        "confidence": "high"
+      },
+      "updatable": false
+    },
+    "pip": {
+      "display_name": "pip",
+      "homepage": "https://pip.pypa.io",
+      "description": "Python 包安装器，随 Python 一起安装。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "pip",
+        "pip3"
+      ],
+      "required_version": null,
+      "install": [],
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "pip",
+          "args": [
+            "install",
+            "--upgrade",
+            "pip"
+          ],
+          "requires": [
+            "pip"
+          ]
+        }
+      ],
+      "uninstall": [],
+      "updatable": false
+    },
+    "npmrc": {
+      "display_name": "npmrc 优化",
+      "homepage": "https://docs.npmjs.com/cli/v10/configuring-npm/npmrc",
+      "description": "fund=false, audit=false, progress=false",
+      "kind": "file",
+      "category": "system_setting",
+      "file": {
+        "path": "~/.npmrc",
+        "must_exist": true,
+        "contains": [
+          {
+            "line": "fund=false",
+            "pattern": "(?m)^\\s*fund\\s*=\\s*false",
+            "desc": "关闭资助提示"
+          },
+          {
+            "line": "audit=false",
+            "pattern": "(?m)^\\s*audit\\s*=\\s*false",
+            "desc": "关闭安装时安全审计，提升安装速度"
+          },
+          {
+            "line": "progress=false",
+            "pattern": "(?m)^\\s*progress\\s*=\\s*false",
+            "desc": "关闭下载进度条，减少日志噪音"
+          }
+        ],
+        "excludes": []
+      },
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "fund",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "audit",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "progress",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "fund",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "audit",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "progress",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "uninstall": [],
+      "updatable": false
+    },
+    "rtk": {
+      "display_name": "RTK",
+      "homepage": "https://github.com/rtk-ai/rtk",
+      "description": "Token 消耗削减工具集。",
+      "kind": "software",
+      "category": "system_setting",
+      "app_type": "cli",
+      "detect_names": [
+        "rtk"
+      ],
+      "required_version": null,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-aarch64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk_0.48.0-1_amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-0.48.0-1.x86_64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-unknown-linux-musl.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-aarch64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "rtk"
+        },
+        {
+          "kind": "command",
+          "platforms": 4,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://raw.githubusercontent.com/rtk-ai/rtk/refs/heads/master/install.sh | sh"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "rtk-ai.rtk"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-aarch64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk_0.48.0-1_amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-0.48.0-1.x86_64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-unknown-linux-musl.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-aarch64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "rtk"
+        },
+        {
+          "kind": "command",
+          "platforms": 4,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://raw.githubusercontent.com/rtk-ai/rtk/refs/heads/master/install.sh | sh"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "rtk-ai.rtk"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "rtk"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "rtk-ai.rtk"
+        }
+      ],
+      "version_info": {
+        "latest": "0.48.0",
+        "method": "github_releases",
+        "fetched_at": "2026-09-05T15:51:07Z",
+        "confidence": "high"
+      },
+      "updatable": true
+    },
+    "pwsh": {
+      "display_name": "PowerShell 7",
+      "homepage": "https://github.com/PowerShell/PowerShell",
+      "description": "增强终端能力，比 CMD 和系统内置 PowerShell 更强大，兼容性更好。",
+      "kind": "software",
+      "category": "system_setting",
+      "app_type": "cli",
+      "detect_names": [
+        "pwsh"
+      ],
+      "platforms": 1,
+      "required_version": null,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.5/PowerShell-7.6.5-win-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.5/PowerShell-7.6.5-win-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Microsoft.PowerShell"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/PowerShell/PowerShell/releases"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.5/PowerShell-7.6.5-win-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.5/PowerShell-7.6.5-win-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Microsoft.PowerShell"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/PowerShell/PowerShell/releases"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Microsoft.PowerShell"
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "PowerShell 7"
+        }
+      ],
+      "updatable": true,
+      "version_info": {
+        "latest": "7.6.5",
+        "method": "github_releases",
+        "fetched_at": "2026-09-05T15:51:13Z",
+        "confidence": "high"
+      }
+    }
+  }
+}
