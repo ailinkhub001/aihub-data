@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "generated_at": "2026-09-10T04:47:51Z",
+  "revision": "2026-09-10T04:47:51Z",
+  "app": {
+    "name": "aihub",
+    "version": "0.3.7",
+    "channel": "stable",
+    "critical": false,
+    "published_at": "2026-09-10T04:47:51Z",
+    "notes": "## 更新内容\n\n### ✨ 提示词库更新\n- 默认提示词库替换为候选集中 10 条热门提示词，中英文同步更新，开箱即用体验更佳。\n\n### 🔧 修复 WebView 最小化问题\n- 修复窗口最小化再还原后，WebView 区域右键无反应的问题。\n- 同步 WebView2 的 IsVisible 状态，防止还原后抢占焦点。\n\n### 📝 发布日志渲染优化\n- 更新弹窗中的发布日志现在支持 Markdown 子集渲染，排版更清晰；旧版本日志也做了兼容处理，保留原有换行显示。\n\n### 🌐 国际化完善\n- 网页矩阵访问地址面板的 4 处硬编码文案已迁入 ARB 文件，界面语言跟随系统设置统一切换。"
+  },
+  "artifacts": [
+    {
+      "path": "catalog/ai_apps.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps.json",
+      "sha256": "fd6f2deeccd88d63f9fa1fff758ef83dd6edb30497a65a9b7bd53569bb962670",
+      "size": 128041,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/ai_apps_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps_en.json",
+      "sha256": "810a9cee4d682035bd61433f389b7e86ad3fd96e4566a5a1ba2f86568d9cb293",
+      "size": 6118,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/alias_map.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/alias_map.json",
+      "sha256": "92f4b13087603d70c2b3cabad8e83dc5371c8a9edb33b6672cff9826e102dd54",
+      "size": 1729,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check.json",
+      "sha256": "6f5e099e1c10a6bba18cf58f8223af58367e658f236b3135f4a6bf55a268244f",
+      "size": 31453,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check_en.json",
+      "sha256": "d1e53392db7e2bea1e87bf05a87cd01237e2998cc01168a8ed0014fc0ce83f4f",
+      "size": 1496,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/networks.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/networks.json",
+      "sha256": "2c9bbed0676d358e2f2b0558c04abaf8f41ed2e2af2f4ebf8fd86f34c0f4435a",
+      "size": 12215,
+      "kind": "catalog"
+    },
+    {
+      "path": "aihub-0.3.7-windows-x64-setup.exe",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.3.7/aihub-0.3.7-windows-x64-setup.exe",
+      "sha256": "9c8e19eef7218cfbd9b5f4a25ea57b588e85d5d24e2b9f9156f6d51a4d8a24d2",
+      "size": 23220654,
+      "kind": "installer",
+      "os": "windows",
+      "arch": "x64"
+    }
+  ]
+}
