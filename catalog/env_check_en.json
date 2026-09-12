@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "checks": {
+    "git": {
+      "display_name": "Git",
+      "description": "Distributed version control system, the de facto standard for software development."
+    },
+    "node": {
+      "display_name": "Node.js",
+      "description": "V8-based JavaScript runtime."
+    },
+    "npm": {
+      "display_name": "npm",
+      "description": "Node package manager, installed alongside Node.js."
+    },
+    "python": {
+      "display_name": "Python",
+      "description": "General-purpose programming language widely used for scripting, data, and AI."
+    },
+    "pip": {
+      "display_name": "pip",
+      "description": "Python package installer, installed alongside Python."
+    },
+    "npmrc": {
+      "display_name": "npmrc optimization",
+      "description": "fund=false, audit=false, progress=false",
+      "file": {
+        "contains": [
+          { "line": "fund=false", "desc": "Disable funding prompts" },
+          { "line": "audit=false", "desc": "Disable install-time security audit to speed up installs" },
+          { "line": "progress=false", "desc": "Hide the download progress bar to reduce log noise" }
+        ]
+      }
+    },
+    "rtk": {
+      "display_name": "RTK",
+      "description": "A toolkit for reducing token consumption."
+    },
+    "pwsh": {
+      "display_name": "PowerShell 7",
+      "description": "Microsoft's modern cross-platform shell — far more capable than CMD and the built-in Windows PowerShell, with better compatibility."
+    }
+  }
+}
