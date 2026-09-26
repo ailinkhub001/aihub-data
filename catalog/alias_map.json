@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "aliases": {
+    "claude": [
+      "claude-cli",
+      "claude-desktop"
+    ],
+    "claude-cli": [
+      "claude-cli"
+    ],
+    "claude-code": [
+      "claude-cli"
+    ],
+    "claude-desktop": [
+      "claude-desktop"
+    ],
+    "claude.app": [
+      "claude-desktop"
+    ],
+    "Claude.app": [
+      "claude-desktop"
+    ],
+    "agy": [
+      "antigravity"
+    ],
+    "antigravity": [
+      "antigravity"
+    ],
+    "workbuddy": [
+      "workbuddy"
+    ],
+    "codex": [
+      "codex",
+      "chatgpt-desktop"
+    ],
+    "openai-codex": [
+      "codex",
+      "chatgpt-desktop"
+    ],
+    "chatgpt": [
+      "chatgpt-desktop"
+    ],
+    "chatgpt-desktop": [
+      "chatgpt-desktop"
+    ],
+    "chatgpt.app": [
+      "chatgpt-desktop"
+    ],
+    "ChatGPT.app": [
+      "chatgpt-desktop"
+    ],
+    "ChatGPT": [
+      "chatgpt-desktop"
+    ],
+    "codex-desktop": [
+      "chatgpt-desktop"
+    ],
+    "Codex.app": [
+      "chatgpt-desktop"
+    ],
+    "codex.app": [
+      "chatgpt-desktop"
+    ],
+    "gemini": [
+      "gemini"
+    ],
+    "gemini-cli": [
+      "gemini"
+    ],
+    "grok": [
+      "grok"
+    ],
+    "grok-build": [
+      "grok"
+    ],
+    "openclaw": [
+      "openclaw"
+    ],
+    "opencode": [
+      "opencode"
+    ],
+    "open-code": [
+      "opencode"
+    ],
+    "hermes": [
+      "hermes"
+    ],
+    "hermes-agent": [
+      "hermes"
+    ],
+    "cursor": [
+      "cursor"
+    ],
+    "lm-studio": [
+      "lm-studio"
+    ],
+    "trae": [
+      "trae",
+      "trae-cn"
+    ],
+    "trae-cn": [
+      "trae-cn"
+    ],
+    "trae-intl": [
+      "trae"
+    ],
+    "pi": [
+      "pi"
+    ],
+    "dsh": [
+      "deepseek-harness"
+    ],
+    "deepseek-harness": [
+      "deepseek-harness"
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "apps": {
+    "claude-cli": {
+      "display_name": "Claude Code",
+      "description": "Claude Code is an agentic coding tool developed by Anthropic.",
+      "latest_news": {
+        "title": "Claude Code 2.x adds subagents, Skills and Hooks, and can connect to MCP tools."
+      }
+    },
+    "claude-desktop": {
+      "display_name": "Claude Desktop",
+      "description": "Claude desktop client.",
+      "latest_news": {
+        "title": "The desktop app supports MCP connectors and local file access on both Windows and macOS."
+      }
+    },
+    "antigravity": {
+      "display_name": "Antigravity",
+      "description": "Google's agentic coding CLI, command name is agy.",
+      "latest_news": {
+        "title": "Google's VS Code-based AI IDE, scheduling multiple tasks in parallel from an agent manager."
+      }
+    },
+    "workbuddy": {
+      "display_name": "WorkBuddy",
+      "description": "AI assistant and automation workbench integrating multi-source skills and MCP capabilities.",
+      "latest_news": {
+        "title": "Tencent WorkBuddy desktop app, bundling skills, experts and MCP connectors."
+      }
+    },
+    "codex": {
+      "display_name": "Codex CLI",
+      "description": "OpenAI's open-source lightweight terminal coding agent that can edit files, run commands locally, and integrate into your workflow.",
+      "latest_news": {
+        "title": "Codex CLI supports local sandboxed execution and the GPT-5 model family."
+      }
+    },
+    "opencode": {
+      "display_name": "OpenCode",
+      "description": "Open-source AI coding agent by SST, usable in the terminal, desktop, or IDE, supporting 75+ models.",
+      "latest_news": {
+        "title": "Open-source terminal agent that works with any model provider and integrates with LSP."
+      }
+    },
+    "gemini": {
+      "display_name": "Gemini CLI",
+      "description": "Google's open-source terminal AI agent that brings Gemini's capabilities directly to the command line.",
+      "latest_news": {
+        "title": "Gemini CLI's free tier now covers Gemini 3 Pro, with built-in MCP and extension support."
+      }
+    },
+    "grok": {
+      "display_name": "Grok Build",
+      "description": "A terminal AI coding agent by xAI with a full-screen TUI; it understands codebases, performs edits and runs commands, and searches the web.",
+      "latest_news": {
+        "title": "Official Grok Build CLI from xAI with a full-screen TUI for codebase understanding and autonomous editing."
+      }
+    },
+    "deepseek-harness": {
+      "display_name": "DeepSeek Harness",
+      "description": "DeepSeek official AI Harness framework and Web service."
+    },
+    "openclaw": {
+      "display_name": "OpenClaw",
+      "description": "Multi-channel AI gateway with extensible message integrations."
+    },
+    "hermes": {
+      "display_name": "Hermes Agent",
+      "description": "Open-source autonomous AI agent by Nous Research, featuring persistent memory and custom skill creation."
+    },
+    "cursor": {
+      "display_name": "Cursor",
+      "description": "AI-native code editor built on VS Code, supporting repo-wide context editing.",
+      "latest_news": {
+        "title": "Version 3.x ships the Composer agent and background agents, rewriting multiple files repo-wide."
+      }
+    },
+    "lm-studio": {
+      "display_name": "LM Studio",
+      "description": "Desktop model browser and inference GUI with GGUF support.",
+      "latest_news": {
+        "title": "Local model client with MLX / llama.cpp backends and an OpenAI-compatible server."
+      }
+    },
+    "chatgpt-desktop": {
+      "display_name": "ChatGPT Desktop",
+      "description": "OpenAI's official ChatGPT desktop client, with a global hotkey, voice conversations and local app integration.",
+      "latest_news": {
+        "title": "The desktop app supports GPT-5.2, tasks and local app integration, with a global hotkey on macOS and Windows."
+      }
+    },
+    "cherry-studio": {
+      "display_name": "Cherry Studio",
+      "description": "Cross-platform multi-model desktop client with a built-in knowledge base, MCP support and aggregation across multiple LLM providers.",
+      "latest_news": {
+        "title": "Version 2.0 reworks the knowledge base and MCP support, adding an agent hub and side-by-side model comparison."
+      }
+    },
+    "doubao": {
+      "display_name": "Doubao",
+      "description": "AI assistant desktop client from ByteDance, covering chat, AI coding and a browser sidebar."
+    },
+    "zcode": {
+      "display_name": "ZCode",
+      "description": "AI coding desktop client from Zhipu, powered by the GLM model family.",
+      "latest_news": {
+        "title": "A GLM-powered coding client for Chinese developers, with project-wide context and terminal command execution."
+      }
+    },
+    "kiro": {
+      "display_name": "Kiro",
+      "description": "AI IDE from AWS, built for spec-driven development.",
+      "latest_news": {
+        "title": "Turns requirements into executable tasks via specs, hooks and steering, and can connect your own models."
+      }
+    },
+    "trae": {
+      "display_name": "Trae",
+      "description": "AI-native IDE from ByteDance (International edition), integrated with Claude and GPT models.",
+      "latest_news": {
+        "title": "SOLO mode takes over development tasks end to end with international model support."
+      }
+    },
+    "trae-cn": {
+      "display_name": "Trae CN",
+      "description": "AI-native IDE from ByteDance (China edition), optimized for Chinese developers with Doubao and DeepSeek.",
+      "latest_news": {
+        "title": "Trae China build with built-in Doubao and DeepSeek support."
+      }
+    },
+    "pi": {
+      "display_name": "Pi Agent Harness",
+      "description": "Open-source terminal coding agent by earendil-works that understands code from repo context, performs edits and runs commands, with a local sandbox and multi-model support.",
+      "latest_news": {
+        "title": "Pi is an open-source terminal coding agent maintained by earendil-works, with local sandbox and multi-model support."
+      }
+    }
+  }
+}
