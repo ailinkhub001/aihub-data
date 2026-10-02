@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "generated_at": "2026-10-02T11:32:26Z",
+  "revision": "2026-10-02T11:32:26Z",
+  "app": {
+    "name": "aihub",
+    "version": "0.5.4",
+    "channel": "stable",
+    "critical": false,
+    "published_at": "2026-10-02T11:32:26Z",
+    "notes": "## 0.5.4+21 Claude Desktop 安装检测与下载稳定性\n\n### ✨ 新功能\n- Claude Desktop 支持 MSIX 直链安装：优先走官方 MSIX 包直链下载安装，同架构的 ClaudeSetup 引导器作为兜底，安装更干净、更少依赖官方引导器的网络表现。\n- 下载引擎新增「同一次调用内断点续传」：下载中断后最多自动续传 4 次，从已下载位置继续并延续同一份流式 SHA-256 校验；服务端不支持续传或长度不符时自动从零重下，绝不拼接错位字节。彻底解决官方引导器三次整包重下都失败于 unexpected EOF 的问题，对所有安装包生效。\n\n### 🔧 稳定性与修复\n- 修复 Windows 上 MSIX/AppX 分发的应用（如 Claude Desktop 2.x）检测不到的问题：新增 MSIX/AppX 注册表检测通道，从包安装目录解析真实启动器并回读版本，`aihub check` 识别更准确。\n- 修复低版本运行时点「一键安装」被跳过、卡片又不显示可更新的问题：现在会把未安装或版本不达标的运行时一并纳入安装，版本过低的自动走升级流程，并放行更新按钮。\n- 修复 macOS 安装 DMG 时可能把应用装进旧目录、造成目录嵌套污染的问题：改为先暂存再原子替换，安装结果干净可控。\n- 修复 Windows PowerShell 5.1 下 `check.ps1` 的 l10n 校验在步骤 2 就静默中止的问题，校验语义不变、全流程可完整跑通。\n\n### 📦 发布与分发\n- 发布时除 checksums 外，双镜像 Release 页现在同步上传对应的 `manifest.json` 附件，自更新清单与校验文件同级可查，重新同步也会自动补传。\n\n---\n\n## 0.5.3+20 网页矩阵修复与体验优化\n\n### ✨ 新功能\n- 安装 Hermes Agent 前新增温馨提示确认弹窗：安装与排障会接触 Git、Python、Node.js、FFmpeg、uv 等工具，以及环境变量、编译环境、包管理器等概念，过程中可能遇到需要自行判断处理的小问题。了解提示并点击「继续安装」后才会开始。\n\n### ✨ 扩展页全新改版\n- 扩展页转为纯展示橱窗，只看不用改，页面更简洁清爽。\n- 新增「开源项目」分类，首批精选 10 个热门 AI 开源项目（如 n8n、Ollama、Dify、Open WebUI、LangChain、ComfyUI 等）。\n- 分类重新梳理为 MCP / Skills / 开源项目三类，卡片保留分类与推荐标识，可一键跳转项目主页了解详情。\n\n### ✨ 提示词库扩充\n- 默认提示词库新增 6 条极简模板，共 16 条，开箱即用。\n- 新增 5 条两段式澄清模板，覆盖 AI 协作最常见场景：先看再答、暂停答疑、先方案后动手、解释刚才的改动、需求澄清。\n- 新增单行工具卡「常用极简短句子」，收录 5 句高频短句，逐段复制即用。\n- 填写格式全面统一：需要填写的内容统一放在最后一段，位置醒目、格式清晰，更好上手。\n\n### 🔧 稳定性与修复\n- 修复 AI 网页矩阵向 OpenClaw 多投消息时误点「语音按钮」、导致消息实际没有发出的问题。\n- 修复 OpenClaw 新建会话页首条广播因服务尚未就绪而超时的问题：现在最多等待 15 秒，期间若输入内容被页面清空还会自动重新填入并继续发送。\n- 修复提示词库「常用极简短句子」卡片第一句是无意义的 return . 的问题，已改为「仅回复：好」（英文版 reply exactly: ok）。\n- 修复部分电脑上环境检测识别不到已安装工具的问题，AI 软件识别更准确。\n- 修复对已排在首位的提示词点「置顶」没有反应的问题，现在会友好提示「已在顶部」。\n"
+  },
+  "artifacts": [
+    {
+      "path": "catalog/ai_apps.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps.json",
+      "sha256": "37787308b0129cd714ece71f5a1226c0b854938d20a36623c9de18d0ddaacc26",
+      "size": 130695,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/ai_apps_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps_en.json",
+      "sha256": "810a9cee4d682035bd61433f389b7e86ad3fd96e4566a5a1ba2f86568d9cb293",
+      "size": 6118,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/alias_map.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/alias_map.json",
+      "sha256": "92f4b13087603d70c2b3cabad8e83dc5371c8a9edb33b6672cff9826e102dd54",
+      "size": 1729,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check.json",
+      "sha256": "98d1829acb0653201f7eb2e0dadaa0a702bf889d003d5046e8d96e28bc89709b",
+      "size": 31438,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check_en.json",
+      "sha256": "d1e53392db7e2bea1e87bf05a87cd01237e2998cc01168a8ed0014fc0ce83f4f",
+      "size": 1496,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/networks.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/networks.json",
+      "sha256": "2c9bbed0676d358e2f2b0558c04abaf8f41ed2e2af2f4ebf8fd86f34c0f4435a",
+      "size": 12215,
+      "kind": "catalog"
+    },
+    {
+      "path": "aihub-0.5.4-windows-x64-setup.exe",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.4/aihub-0.5.4-windows-x64-setup.exe",
+      "sha256": "83dc3c4823a3bde6bd8f4c141f735ac534b15672fbc0b6a6535ae30736d14acb",
+      "size": 24455328,
+      "kind": "installer",
+      "os": "windows",
+      "arch": "x64"
+    }
+  ]
+}
