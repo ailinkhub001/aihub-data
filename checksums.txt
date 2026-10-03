@@ -1,0 +1,2 @@
+d4058723e0e780c7af85f3beeae78b1f440150425bc9afde6f50532cea9ab76f  aihub-0.5.4-macos-arm64.dmg
+83dc3c4823a3bde6bd8f4c141f735ac534b15672fbc0b6a6535ae30736d14acb  aihub-0.5.4-windows-x64-setup.exe
