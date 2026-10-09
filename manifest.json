@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "generated_at": "2026-10-09T16:42:47Z",
+  "revision": "2026-10-09T16:42:47Z",
+  "app": {
+    "name": "aihub",
+    "version": "0.5.5",
+    "channel": "stable",
+    "critical": false,
+    "published_at": "2026-10-09T16:42:47Z",
+    "notes": "## 0.5.5+22 本地 AI 服务启动稳定性修复\n\n### ✨ 新功能\n- 提示词库「载入」支持撤销：从库中载入提示词后，一键撤销即可回到载入前编辑的内容，标题、标签一并还原，误触不再丢稿。\n- ChatGPT Desktop 在 Windows 上改走官方安装器静默直装，安装更可靠；卸载补齐系统级移除兜底，清理更彻底。\n\n### 🔧 稳定性与修复\n- 修复 Hermes 启动后长时间停在「Web 未就绪」的问题：此前就绪探测被配置文件中的注释误导、一直在探测错误的端口，现在数秒内即可确认就绪并打开页面。\n- 本地 AI 服务启动等待超时后不再永久卡在加载中：超时后直接打开服务地址，页面能否使用一目了然。\n- OpenClaw 启动自愈：配置文件缺少网关模式设置时自动按官方建议补全，不再出现点击「启动」后进程看似成功、实则已退出。\n- 修复部分 Windows 电脑上安装 Hermes 失败的问题：不同版本 PowerShell 的环境相互污染导致安装器报错，现已隔离。\n- DeepSeek Harness 适配 0.2.x 新版配置体系：绑定与一键应用在新旧版本上均正常，升级后会自动识别新版配置。\n- 安装、卸载、更新按钮点击瞬间立即全局禁用，杜绝确认弹窗期间快速连点造成重复任务。\n- 修复 ChatGPT Desktop 等应用版本号显示成内部运行时版本（如 154.x）的问题，现在显示真实发布版本。\n\n### 📦 软件目录更新\n- Hermes 卸载改用官方卸载命令，并补充 Windows 数据目录清理。\n- 多款软件目录版本同步更新（Claude、Cursor、WorkBuddy 等）。\n"
+  },
+  "artifacts": [
+    {
+      "path": "catalog/ai_apps.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps.json",
+      "sha256": "a4ffd5cbef18ef1f57e1561adfbe630dd016596a78d381e98186976e178f4ee2",
+      "size": 130755,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/ai_apps_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps_en.json",
+      "sha256": "810a9cee4d682035bd61433f389b7e86ad3fd96e4566a5a1ba2f86568d9cb293",
+      "size": 6118,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/alias_map.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/alias_map.json",
+      "sha256": "92f4b13087603d70c2b3cabad8e83dc5371c8a9edb33b6672cff9826e102dd54",
+      "size": 1729,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check.json",
+      "sha256": "abb9ae9a5c00306479cdc324282c1b0ca7f8f052fa2d9f5d95e076751616738a",
+      "size": 31454,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check_en.json",
+      "sha256": "d1e53392db7e2bea1e87bf05a87cd01237e2998cc01168a8ed0014fc0ce83f4f",
+      "size": 1496,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/networks.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/networks.json",
+      "sha256": "2c9bbed0676d358e2f2b0558c04abaf8f41ed2e2af2f4ebf8fd86f34c0f4435a",
+      "size": 12215,
+      "kind": "catalog"
+    },
+    {
+      "path": "aihub-0.5.5-macos-arm64.dmg",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.5/aihub-0.5.5-macos-arm64.dmg",
+      "sha256": "bf069afa64b5163984f355328d0b8a4783d400d5c44a16a38a2b9308acfa8d8d",
+      "size": 50008748,
+      "kind": "installer",
+      "os": "macos",
+      "arch": "arm64"
+    }
+  ]
+}
