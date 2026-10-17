@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "generated_at": "2026-10-17T03:52:39Z",
+  "revision": "2026-10-17T03:52:39Z",
+  "app": {
+    "name": "aihub",
+    "version": "0.5.6",
+    "channel": "stable",
+    "critical": false,
+    "published_at": "2026-10-17T03:52:39Z",
+    "notes": "## 0.5.6+23 全局快捷键与真实焦点导航\n\n### ✨ 新功能\n- 全局快捷键体系上线：`Ctrl+1..8` 切换页面、`Ctrl+B` 收起侧栏、`Alt+1..9` 直达工作区、`Alt+方向键` 在卡片间移动焦点，双平台键位一致，按错不再触发系统截图或 Windows 徽标菜单。\n- 网页与终端卡片支持真实键盘焦点：选中卡片即可直接输入，切回页面自动恢复上次的光标位置（网页在输入框、终端在你离开的那一格）。\n- 设置页新增「快捷键」只读面板，当前全部键位一目了然。\n\n### 🔧 稳定性与修复\n- 按 Alt+数字等组合键时不再发出「咚」的提示音，且按键全部生效——上一版为消除提示音误伤了按键派发，导致部分快捷键失灵，已从系统消息源头根治。\n- 终端在 125%~175% 显示器缩放下的细条纹彻底消除，文字与背景不再错位。\n- 终端翻看历史输出时，新内容不再从视口下方「流过」，位置保持钉住；滚轮滚动按 120 像素一档、手感与 Windows Terminal 一致。\n- 提示词编辑器与预览的选中行暗纹改善（个别半像素缩放档仍有单行残影，属框架上游限制）。\n- 自更新解压补齐路径逃逸防护：压缩包内的越界路径与符号链接一律拒绝，更新链路被篡改时不再能写到程序目录之外。\n- 软件目录同步最新版本与安装配方，检测、升级提示与安装结果更准确。\n\n### 📦 发布与分发\n- 构建环境锁定 Flutter 3.47.7，安装包在固定工具链下产出，减少环境漂移带来的差异。\n"
+  },
+  "artifacts": [
+    {
+      "path": "catalog/ai_apps.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps.json",
+      "sha256": "dc7d8973f2d7d4145d88b795a4ac52be83b9f793b95ac5024eb1c5d93a877550",
+      "size": 130727,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/ai_apps_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps_en.json",
+      "sha256": "810a9cee4d682035bd61433f389b7e86ad3fd96e4566a5a1ba2f86568d9cb293",
+      "size": 6118,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/alias_map.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/alias_map.json",
+      "sha256": "92f4b13087603d70c2b3cabad8e83dc5371c8a9edb33b6672cff9826e102dd54",
+      "size": 1729,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check.json",
+      "sha256": "9ae27c4079afcecc008f55b1bf83c9ee07e88dc225296c7388537bbd01f017a0",
+      "size": 31467,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check_en.json",
+      "sha256": "d1e53392db7e2bea1e87bf05a87cd01237e2998cc01168a8ed0014fc0ce83f4f",
+      "size": 1496,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/networks.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/networks.json",
+      "sha256": "2c9bbed0676d358e2f2b0558c04abaf8f41ed2e2af2f4ebf8fd86f34c0f4435a",
+      "size": 12215,
+      "kind": "catalog"
+    },
+    {
+      "path": "aihub-0.5.6-macos-arm64.dmg",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.6/aihub-0.5.6-macos-arm64.dmg",
+      "sha256": "ecbb0c8a593a5b44fc7b1c6a9fdacd5685fab85a9d57f6c7cf28ae97a298e030",
+      "size": 50165913,
+      "kind": "installer",
+      "os": "macos",
+      "arch": "arm64"
+    },
+    {
+      "path": "aihub-0.5.6-windows-x64-setup.exe",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.6/aihub-0.5.6-windows-x64-setup.exe",
+      "sha256": "0ac24ead182c52f029bd13106f028c539006fa17998dbc653e60775e0532ec59",
+      "size": 51759811,
+      "kind": "installer",
+      "os": "windows",
+      "arch": "x64"
+    }
+  ]
+}
