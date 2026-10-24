@@ -1,0 +1,1714 @@
+{
+  "version": 1,
+  "checks": {
+    "git": {
+      "display_name": "Git",
+      "homepage": "https://git-scm.com",
+      "description": "分布式版本控制系统，软件开发的事实标准。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "git"
+      ],
+      "required_version": null,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.huaweicloud.com/git-for-windows/v2.56.0.windows.3/Git-2.56.0.3-64-bit.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.3/Git-2.56.0.3-64-bit.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.huaweicloud.com/git-for-windows/v2.56.0.windows.3/Git-2.56.0.3-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.3/Git-2.56.0.3-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "chocolatey",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "scoop",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "zypper",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apk",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Git.Git"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://git-scm.com/install"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.huaweicloud.com/git-for-windows/v2.56.0.windows.3/Git-2.56.0.3-64-bit.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.3/Git-2.56.0.3-64-bit.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.huaweicloud.com/git-for-windows/v2.56.0.windows.3/Git-2.56.0.3-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.3/Git-2.56.0.3-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/SUPPRESSMSGBOXES"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "sh",
+          "args": [
+            "-c",
+            "brew update && brew upgrade git || brew install git"
+          ],
+          "requires": [
+            "brew"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "chocolatey",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "scoop",
+          "id": "git"
+        },
+        {
+          "kind": "command",
+          "platforms": 4,
+          "program": "sh",
+          "args": [
+            "-c",
+            "apt update && apt install --only-upgrade -y git"
+          ],
+          "requires": [
+            "apt"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "zypper",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apk",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Git.Git"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://git-scm.com/install"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Git.Git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "chocolatey",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "scoop",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "zypper",
+          "id": "git"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apk",
+          "id": "git"
+        },
+        {
+          "kind": "uninstaller",
+          "platforms": 1,
+          "id": "unins*.exe",
+          "args": [
+            "/SILENT",
+            "/NORESTART"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Git"
+        }
+      ],
+      "version_info": {
+        "latest": "2.56.0",
+        "method": "github_tags",
+        "fetched_at": "2026-10-24T03:51:05Z",
+        "confidence": "high"
+      },
+      "updatable": true
+    },
+    "node": {
+      "display_name": "Node.js",
+      "homepage": "https://nodejs.org",
+      "description": "基于 V8 的 JavaScript 运行时。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "node"
+      ],
+      "required_version": "26.0.0",
+      "satisfies_version": "26.0.0",
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v26.12.1/node-v26.12.1-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://nodejs.org/dist/v26.12.1/node-v26.12.1-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v26.12.1/node-v26.12.1-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://nodejs.org/dist/v26.12.1/node-v26.12.1-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v26.12.1/node-v26.12.1.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://nodejs.org/dist/v26.12.1/node-v26.12.1.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "node"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "nvm",
+          "args": [
+            "install",
+            "26"
+          ],
+          "requires": [
+            "nvm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "fnm",
+          "args": [
+            "install",
+            "26"
+          ],
+          "requires": [
+            "fnm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "nodejs"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "OpenJS.NodeJS"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://nodejs.org/en/download"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v26.12.1/node-v26.12.1-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://nodejs.org/dist/v26.12.1/node-v26.12.1-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v26.12.1/node-v26.12.1-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://nodejs.org/dist/v26.12.1/node-v26.12.1-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://mirrors.aliyun.com/nodejs-release/v26.12.1/node-v26.12.1.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://nodejs.org/dist/v26.12.1/node-v26.12.1.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "node"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "nvm",
+          "args": [
+            "install",
+            "26"
+          ],
+          "requires": [
+            "nvm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "fnm",
+          "args": [
+            "install",
+            "26"
+          ],
+          "requires": [
+            "fnm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "nodejs"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "OpenJS.NodeJS"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://nodejs.org/en/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "node"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "OpenJS.NodeJS"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "nodejs"
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Node.js"
+        }
+      ],
+      "version_info": {
+        "latest": "26.12.1",
+        "method": "api",
+        "branches": [
+          {
+            "branch": "26",
+            "latest": "26.12.1",
+            "eol": false,
+            "lts": true
+          },
+          {
+            "branch": "24",
+            "latest": "24.22.1",
+            "eol": false,
+            "lts": true
+          },
+          {
+            "branch": "22",
+            "latest": "22.23.4",
+            "eol": false,
+            "lts": true
+          }
+        ],
+        "fetched_at": "2026-10-24T03:51:06Z",
+        "confidence": "high"
+      },
+      "updatable": true
+    },
+    "npm": {
+      "display_name": "npm",
+      "homepage": "https://www.npmjs.com",
+      "description": "Node 包管理器，随 Node.js 一起安装。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "npm"
+      ],
+      "required_version": null,
+      "install": [],
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "install",
+            "-g",
+            "npm"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "uninstall": [],
+      "updatable": false
+    },
+    "python": {
+      "display_name": "Python",
+      "homepage": "https://www.python.org",
+      "description": "通用编程语言，广泛用于脚本、数据与 AI。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "python",
+        "python3"
+      ],
+      "required_version": "3.14.0",
+      "satisfies_version": "3.14.0",
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/python-release/windows/python-3.14.9-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://www.python.org/ftp/python/3.14.9/python-3.14.9-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/python-release/windows/python-3.14.9-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://www.python.org/ftp/python/3.14.9/python-3.14.9-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://www.python.org/ftp/python/3.14.9/python-3.14.9-macos11.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "python"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "python3"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Python.Python.3.14"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.python.org/downloads/"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/python-release/windows/python-3.14.9-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://www.python.org/ftp/python/3.14.9/python-3.14.9-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://mirrors.aliyun.com/python-release/windows/python-3.14.9-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://www.python.org/ftp/python/3.14.9/python-3.14.9-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64",
+          "args": [
+            "/quiet",
+            "PrependPath=1"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://www.python.org/ftp/python/3.14.9/python-3.14.9-macos11.pkg",
+          "file_kind": "pkg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "python"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "python3"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Python.Python.3.14"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.python.org/downloads/"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "python"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Python.Python.3.14"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "python3"
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Python"
+        }
+      ],
+      "version_info": {
+        "latest": "3.14.9",
+        "method": "api",
+        "branches": [
+          {
+            "branch": "3.14",
+            "latest": "3.14.9",
+            "eol": false,
+            "lts": false
+          },
+          {
+            "branch": "3.13",
+            "latest": "3.13.17",
+            "eol": false,
+            "lts": false
+          },
+          {
+            "branch": "3.12",
+            "latest": "3.12.15",
+            "eol": false,
+            "lts": false
+          }
+        ],
+        "fetched_at": "2026-10-24T03:51:07Z",
+        "confidence": "high"
+      },
+      "updatable": true
+    },
+    "pip": {
+      "display_name": "pip",
+      "homepage": "https://pip.pypa.io",
+      "description": "Python 包安装器，随 Python 一起安装。",
+      "kind": "software",
+      "category": "runtime",
+      "app_type": "cli",
+      "detect_names": [
+        "pip",
+        "pip3"
+      ],
+      "required_version": null,
+      "install": [],
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "pip",
+          "args": [
+            "install",
+            "--upgrade",
+            "pip"
+          ],
+          "requires": [
+            "pip"
+          ]
+        }
+      ],
+      "uninstall": [],
+      "updatable": false
+    },
+    "npmrc": {
+      "display_name": "npmrc 优化",
+      "homepage": "https://docs.npmjs.com/cli/v10/configuring-npm/npmrc",
+      "description": "fund=false：关闭资助提示\naudit=false：跳过安装审计，加速安装\nprogress=false：禁用进度条\nnpm 执行减少日志，减少流程，减少给 AI 的 Token。",
+      "kind": "file",
+      "category": "system_setting",
+      "file": {
+        "path": "~/.npmrc",
+        "must_exist": true,
+        "contains": [
+          {
+            "line": "fund=false",
+            "pattern": "(?m)^\\s*fund\\s*=\\s*false",
+            "desc": "关闭资助提示"
+          },
+          {
+            "line": "audit=false",
+            "pattern": "(?m)^\\s*audit\\s*=\\s*false",
+            "desc": "关闭安装时安全审计，提升安装速度"
+          },
+          {
+            "line": "progress=false",
+            "pattern": "(?m)^\\s*progress\\s*=\\s*false",
+            "desc": "关闭下载进度条，减少日志噪音"
+          }
+        ],
+        "excludes": []
+      },
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "fund",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "audit",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "progress",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "fund",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "audit",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "progress",
+            "false"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "uninstall": [],
+      "updatable": false
+    },
+    "rtk": {
+      "display_name": "RTK",
+      "homepage": "https://github.com/rtk-ai/rtk",
+      "description": "Token 消耗削减工具集。rtk 注入 AI 软件上下文，在每条指令前增加 rtk，用于过滤或缩减指令的输入内容，减少 AI 的输入 Token 消耗。",
+      "kind": "software",
+      "category": "system_setting",
+      "app_type": "cli",
+      "detect_names": [
+        "rtk"
+      ],
+      "required_version": null,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-oss-x86_64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-aarch64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-oss-x86_64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-oss_1.0.1-1_amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-1.0.1-1.x86_64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-oss-x86_64-unknown-linux-musl.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-aarch64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "rtk"
+        },
+        {
+          "kind": "command",
+          "platforms": 4,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://raw.githubusercontent.com/rtk-ai/rtk/refs/heads/master/install.sh | sh"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "rtk-ai.rtk"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-oss-x86_64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-aarch64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-oss-x86_64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-oss_1.0.1-1_amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-1.0.1-1.x86_64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-oss-x86_64-unknown-linux-musl.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-aarch64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "rtk"
+        },
+        {
+          "kind": "command",
+          "platforms": 4,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://raw.githubusercontent.com/rtk-ai/rtk/refs/heads/master/install.sh | sh"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "rtk-ai.rtk"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "rtk"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "rtk-ai.rtk"
+        }
+      ],
+      "version_info": {
+        "latest": "1.0.1",
+        "method": "github_releases",
+        "fetched_at": "2026-10-24T03:51:08Z",
+        "confidence": "high"
+      },
+      "updatable": true
+    },
+    "pwsh": {
+      "display_name": "PowerShell 7",
+      "homepage": "https://github.com/PowerShell/PowerShell",
+      "description": "增强终端能力，比 CMD 和系统内置 PowerShell 更强大，兼容性更好。",
+      "kind": "software",
+      "category": "system_setting",
+      "app_type": "cli",
+      "detect_names": [
+        "pwsh"
+      ],
+      "platforms": 1,
+      "required_version": null,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.8/PowerShell-7.6.8-win-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.8/PowerShell-7.6.8-win-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Microsoft.PowerShell"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/PowerShell/PowerShell/releases"
+        }
+      ],
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.8/PowerShell-7.6.8-win-x64.msi",
+          "file_kind": "msi",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.8/PowerShell-7.6.8-win-arm64.msi",
+          "file_kind": "msi",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Microsoft.PowerShell"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/PowerShell/PowerShell/releases"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Microsoft.PowerShell"
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "PowerShell 7"
+        }
+      ],
+      "updatable": true,
+      "version_info": {
+        "latest": "7.6.8",
+        "method": "github_releases",
+        "fetched_at": "2026-10-24T03:51:16Z",
+        "confidence": "high"
+      }
+    },
+    "uv": {
+      "display_name": "uv",
+      "description": "Rust 编写的极速 Python 包与环境管理器，替代 pip / pipx / virtualenv，AI 工具链常用的依赖安装底座。",
+      "homepage": "https://docs.astral.sh/uv/",
+      "kind": "software",
+      "category": "professional",
+      "app_type": "cli",
+      "detect_names": [
+        "uv"
+      ],
+      "required_version": null,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-x86_64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "x64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-aarch64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "arm64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-aarch64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-x86_64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-x86_64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-aarch64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "uv"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "astral-sh.uv"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ],
+      "version_info": {
+        "latest": "0.13.5",
+        "method": "github_releases",
+        "fetched_at": "2026-10-24T03:51:18Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-x86_64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "x64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-aarch64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "arm64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-aarch64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-x86_64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-x86_64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-aarch64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.uv/bin"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "uv"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "astral-sh.uv"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://docs.astral.sh/uv/getting-started/installation/"
+        }
+      ]
+    },
+    "ffmpeg": {
+      "display_name": "FFmpeg",
+      "description": "音视频处理的瑞士军刀：转码、剪辑、推流、抽帧，众多 AI 多模态工具的底层依赖。",
+      "homepage": "https://ffmpeg.org",
+      "kind": "software",
+      "category": "professional",
+      "app_type": "cli",
+      "detect_names": [
+        "ffmpeg"
+      ],
+      "required_version": null,
+      "install": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "ffmpeg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "ffmpeg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "ffmpeg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "ffmpeg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apk",
+          "id": "ffmpeg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Gyan.FFmpeg"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://ffmpeg.org/download.html"
+        }
+      ],
+      "updatable": false
+    },
+    "ripgrep": {
+      "display_name": "ripgrep",
+      "description": "极快的代码全文搜索工具（grep 的现代替代），默认递归并尊重 .gitignore，是 AI 编码助手的常用底层依赖。",
+      "homepage": "https://github.com/BurntSushi/ripgrep",
+      "kind": "software",
+      "category": "professional",
+      "app_type": "cli",
+      "detect_names": [
+        "rg"
+      ],
+      "required_version": null,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "x64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-aarch64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "arm64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-aarch64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-aarch64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "ripgrep"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "ripgrep"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "BurntSushi.ripgrep.MSVC"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/BurntSushi/ripgrep/releases"
+        }
+      ],
+      "version_info": {
+        "latest": "15.2.0",
+        "method": "github_releases",
+        "fetched_at": "2026-10-24T03:51:19Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "x64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-aarch64-pc-windows-msvc.zip",
+          "file_kind": "zip",
+          "arch": "arm64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-aarch64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-apple-darwin.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-aarch64-unknown-linux-gnu.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.rg/bin"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "ripgrep"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "ripgrep"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "BurntSushi.ripgrep.MSVC"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/BurntSushi/ripgrep/releases"
+        }
+      ]
+    },
+    "maple_fonts": {
+      "display_name": "Maple Fonts",
+      "description": "Maple Mono 等宽编程字体（Nerd Font · CN 中文版）：圆角设计、中英文 2:1 严格等宽、内置终端图标与中文字形，适合作为终端与编辑器字体。",
+      "homepage": "https://github.com/subframe7536/maple-font",
+      "kind": "file",
+      "category": "system_setting",
+      "file": {
+        "path": "~/Library/Fonts/MapleMono-NF-CN-Regular.ttf",
+        "platform_paths": {
+          "windows": [
+            "~/AppData/Local/Microsoft/Windows/Fonts/MapleMono-NF-CN-Regular.ttf",
+            "C:/Windows/Fonts/MapleMono-NF-CN-Regular.ttf"
+          ],
+          "macos": [
+            "~/Library/Fonts/MapleMono-NF-CN-Regular.ttf",
+            "/Library/Fonts/MapleMono-NF-CN-Regular.ttf"
+          ],
+          "linux": [
+            "~/.local/share/fonts/MapleMono-NF-CN-Regular.ttf",
+            "/usr/local/share/fonts/MapleMono-NF-CN-Regular.ttf",
+            "/usr/share/fonts/MapleMono-NF-CN-Regular.ttf"
+          ]
+        },
+        "must_exist": true,
+        "contains": [],
+        "excludes": []
+      },
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "sh",
+          "args": [
+            "-c",
+            "mkdir -p ~/Library/Fonts && curl -fsSL https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-NF-CN.zip -o /tmp/aihub-maple-nf-cn.zip && unzip -oq /tmp/aihub-maple-nf-cn.zip -d ~/Library/Fonts/ && rm -f /tmp/aihub-maple-nf-cn.zip"
+          ],
+          "requires": [
+            "curl",
+            "unzip"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 4,
+          "program": "sh",
+          "args": [
+            "-c",
+            "mkdir -p ~/.local/share/fonts && curl -fsSL https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-NF-CN.zip -o /tmp/aihub-maple-nf-cn.zip && unzip -oq /tmp/aihub-maple-nf-cn.zip -d ~/.local/share/fonts/ && rm -f /tmp/aihub-maple-nf-cn.zip"
+          ],
+          "requires": [
+            "curl",
+            "unzip"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "program": "powershell",
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "JABFAHIAcgBvAHIAQQBjAHQAaQBvAG4AUAByAGUAZgBlAHIAZQBuAGMAZQA9ACcAUwB0AG8AcAAnAAoAJABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQA9ACcAUwBpAGwAZQBuAHQAbAB5AEMAbwBuAHQAaQBuAHUAZQAnAAoAJABkAGkAcgA9AEoAbwBpAG4ALQBQAGEAdABoACAAJABlAG4AdgA6AEwATwBDAEEATABBAFAAUABEAEEAVABBACAAJwBNAGkAYwByAG8AcwBvAGYAdABcAFcAaQBuAGQAbwB3AHMAXABGAG8AbgB0AHMAJwAKAE4AZQB3AC0ASQB0AGUAbQAgAC0ASQB0AGUAbQBUAHkAcABlACAARABpAHIAZQBjAHQAbwByAHkAIAAtAEYAbwByAGMAZQAgAC0AUABhAHQAaAAgACQAZABpAHIAfABPAHUAdAAtAE4AdQBsAGwACgAkAHoAaQBwAD0ASgBvAGkAbgAtAFAAYQB0AGgAIAAkAGUAbgB2ADoAVABFAE0AUAAgACcAYQBpAGgAdQBiAC0AbQBhAHAAbABlAC0AbgBmAC0AYwBuAC4AegBpAHAAJwAKAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAC0AVQByAGkAIAAnAGgAdAB0AHAAcwA6AC8ALwBnAGkAdABoAHUAYgAuAGMAbwBtAC8AcwB1AGIAZgByAGEAbQBlADcANQAzADYALwBtAGEAcABsAGUALQBmAG8AbgB0AC8AcgBlAGwAZQBhAHMAZQBzAC8AZABvAHcAbgBsAG8AYQBkAC8AdgA3AC4AOQAvAE0AYQBwAGwAZQBNAG8AbgBvAC0ATgBGAC0AQwBOAC4AegBpAHAAJwAgAC0ATwB1AHQARgBpAGwAZQAgACQAegBpAHAACgAkAHQAbQBwAD0ASgBvAGkAbgAtAFAAYQB0AGgAIAAkAGUAbgB2ADoAVABFAE0AUAAgACcAYQBpAGgAdQBiAC0AbQBhAHAAbABlAC0AbgBmAC0AYwBuACcACgBpAGYAKABUAGUAcwB0AC0AUABhAHQAaAAgACQAdABtAHAAKQB7AFIAZQBtAG8AdgBlAC0ASQB0AGUAbQAgACQAdABtAHAAIAAtAFIAZQBjAHUAcgBzAGUAIAAtAEYAbwByAGMAZQB9AAoARQB4AHAAYQBuAGQALQBBAHIAYwBoAGkAdgBlACAALQBQAGEAdABoACAAJAB6AGkAcAAgAC0ARABlAHMAdABpAG4AYQB0AGkAbwBuAFAAYQB0AGgAIAAkAHQAbQBwACAALQBGAG8AcgBjAGUACgBHAGUAdAAtAEMAaABpAGwAZABJAHQAZQBtACAAJAB0AG0AcAAgAC0ARgBpAGwAdABlAHIAIAAnAE0AYQBwAGwAZQBNAG8AbgBvAC0ATgBGAC0AQwBOAC0AKgAuAHQAdABmACcAfABGAG8AcgBFAGEAYwBoAC0ATwBiAGoAZQBjAHQAewAKACAAIAAkAGQAZQBzAHQAPQBKAG8AaQBuAC0AUABhAHQAaAAgACQAZABpAHIAIAAkAF8ALgBOAGEAbQBlAAoAIAAgAEMAbwBwAHkALQBJAHQAZQBtACAAJABfAC4ARgB1AGwAbABOAGEAbQBlACAAJABkAGUAcwB0ACAALQBGAG8AcgBjAGUACgAgACAATgBlAHcALQBJAHQAZQBtAFAAcgBvAHAAZQByAHQAeQAgAC0AUABhAHQAaAAgACcASABLAEMAVQA6AFwAUwBvAGYAdAB3AGEAcgBlAFwATQBpAGMAcgBvAHMAbwBmAHQAXABXAGkAbgBkAG8AdwBzACAATgBUAFwAQwB1AHIAcgBlAG4AdABWAGUAcgBzAGkAbwBuAFwARgBvAG4AdABzACcAIAAtAE4AYQBtAGUAIAAoACQAXwAuAEIAYQBzAGUATgBhAG0AZQArACcAIAAoAFQAcgB1AGUAVAB5AHAAZQApACcAKQAgAC0AVgBhAGwAdQBlACAAJABkAGUAcwB0ACAALQBQAHIAbwBwAGUAcgB0AHkAVAB5AHAAZQAgAFMAdAByAGkAbgBnACAALQBGAG8AcgBjAGUAfABPAHUAdAAtAE4AdQBsAGwACgB9AAoAUgBlAG0AbwB2AGUALQBJAHQAZQBtACAAJAB0AG0AcAAgAC0AUgBlAGMAdQByAHMAZQAgAC0ARgBvAHIAYwBlACAALQBFAHIAcgBvAHIAQQBjAHQAaQBvAG4AIABTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlAAoAUgBlAG0AbwB2AGUALQBJAHQAZQBtACAAJAB6AGkAcAAgAC0ARgBvAHIAYwBlACAALQBFAHIAcgBvAHIAQQBjAHQAaQBvAG4AIABTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlAAoA"
+          ]
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "sh",
+          "args": [
+            "-c",
+            "rm -f ~/Library/Fonts/MapleMono-NF-CN-*.ttf"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 4,
+          "program": "sh",
+          "args": [
+            "-c",
+            "rm -f ~/.local/share/fonts/MapleMono-NF-CN-*.ttf"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "program": "powershell",
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "JABFAHIAcgBvAHIAQQBjAHQAaQBvAG4AUAByAGUAZgBlAHIAZQBuAGMAZQA9ACcAUwBpAGwAZQBuAHQAbAB5AEMAbwBuAHQAaQBuAHUAZQAnAAoAJABkAGkAcgA9AEoAbwBpAG4ALQBQAGEAdABoACAAJABlAG4AdgA6AEwATwBDAEEATABBAFAAUABEAEEAVABBACAAJwBNAGkAYwByAG8AcwBvAGYAdABcAFcAaQBuAGQAbwB3AHMAXABGAG8AbgB0AHMAJwAKACQAcgBlAGcAPQAnAEgASwBDAFUAOgBcAFMAbwBmAHQAdwBhAHIAZQBcAE0AaQBjAHIAbwBzAG8AZgB0AFwAVwBpAG4AZABvAHcAcwAgAE4AVABcAEMAdQByAHIAZQBuAHQAVgBlAHIAcwBpAG8AbgBcAEYAbwBuAHQAcwAnAAoARwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgACQAZABpAHIAIAAtAEYAaQBsAHQAZQByACAAJwBNAGEAcABsAGUATQBvAG4AbwAtAE4ARgAtAEMATgAtACoALgB0AHQAZgAnAHwARgBvAHIARQBhAGMAaAAtAE8AYgBqAGUAYwB0AHsACgAgACAAUgBlAG0AbwB2AGUALQBJAHQAZQBtAFAAcgBvAHAAZQByAHQAeQAgAC0AUABhAHQAaAAgACQAcgBlAGcAIAAtAE4AYQBtAGUAIAAoACQAXwAuAEIAYQBzAGUATgBhAG0AZQArACcAIAAoAFQAcgB1AGUAVAB5AHAAZQApACcAKQAKACAAIABSAGUAbQBvAHYAZQAtAEkAdABlAG0AIAAkAF8ALgBGAHUAbABsAE4AYQBtAGUAIAAtAEYAbwByAGMAZQAKAH0ACgA="
+          ]
+        }
+      ],
+      "version_info": {
+        "latest": "7.9",
+        "method": "github_releases",
+        "source": "https://github.com/subframe7536/maple-font/releases/latest",
+        "confidence": "high"
+      },
+      "updatable": false
+    }
+  }
+}
