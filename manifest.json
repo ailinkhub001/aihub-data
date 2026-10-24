@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "generated_at": "2026-10-24T11:17:40Z",
+  "revision": "2026-10-24T11:17:40Z",
+  "app": {
+    "name": "aihub",
+    "version": "0.5.8",
+    "channel": "stable",
+    "critical": false,
+    "published_at": "2026-10-24T11:17:40Z",
+    "notes": "# 发布说明\n\nmacOS 用户须知：安装包未经 Apple 开发者签名，首次打开若提示「已损坏，无法打开」，请在终端执行一次 xattr -cr /Applications/AIHub.app。通过应用内更新安装的包已自动清除该标记；覆盖安装新版本后会重新带上，每个版本需手动执行一次。\n\n---\n\n## 0.5.8+25 千条提示词库与环境检测升级\n\n### ✨ 新功能\n\n- 提示词工程内置 1000 条精选提示词，覆盖开发、写作、办公等常用场景。全新环境开箱即得；已有提示词库不受影响，可通过「恢复默认」载入新版默认库（自建与导入的提示词不受影响，修改过的默认提示词会被还原，建议先备份）。\n- 提示词支持撤销与重做：编辑区和提示词库均为双向撤销，段落顺序改为直接拖拽调整。\n- 环境页新增「专业工具」分类：uv、ffmpeg、ripgrep 可单独安装并支持检查更新，未安装只作提示不再标红；AI 环境优化项（如 Maple Fonts 字体、npmrc 配置）缺失同样只提醒、不计入错误。\n- 一键安装的 Node.js 与 Python 升级到 Node 26 / Python 3.14 版本线，与 OpenClaw、Hermes 等工具的上游要求对齐，并支持检查更新。\n- ffmpeg 改为压缩包直装，安装后自动把 ffmpeg / ffprobe 等命令接入 PATH，无需包管理器。\n- 设置-关于新增「同步上游数据」卡片：显示当前目录数据版本，可手动立即同步最新目录。\n\n### 🔧 稳定性与修复\n\n- 千条级提示词库的搜索与滚动明显更流畅：搜索与标签过滤改在数据库内执行，滚动条拖拽不再卡顿，搜索输入自动防抖。\n- 修复 macOS/Linux 上 pip、python 命令检测与执行失败的问题（Homebrew 等环境只提供 pip3 / python3 时也能正确定位）。\n- 关闭终端页时，正在运行的程序会先收到正常退出请求，短暂等待后才强制结束，不再残留后台进程。\n- 字体等文件类检测支持多候选路径，同一文件装在不同位置都能被正确识别。\n- Windows 上 WebView 数据目录统一到 %APPDATA%\\AIHub，旧目录会在启动时自动迁移并保留全部网页登录态。\n- 应用内目录同步加强安全校验：只接受官方镜像域名的下载地址。\n"
+  },
+  "artifacts": [
+    {
+      "path": "catalog/ai_apps.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps.json",
+      "sha256": "5204d54707bd92f96db030e0d14d001d2070cf1ab6b88a76c83c319a3face609",
+      "size": 128625,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/ai_apps_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps_en.json",
+      "sha256": "818c75b2c7d5616c75386f725fd0239a68a6505e516cc635869a2bf620fa3ee5",
+      "size": 6753,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/alias_map.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/alias_map.json",
+      "sha256": "92f4b13087603d70c2b3cabad8e83dc5371c8a9edb33b6672cff9826e102dd54",
+      "size": 1729,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check.json",
+      "sha256": "51253dcfb217a0b722b9f4a1751d5f9af034118f57074a01e49aa95e6ebd3d32",
+      "size": 50873,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check_en.json",
+      "sha256": "dfc3d4474897cfd21e0134651db332d60a8af7758c6ac333e425935bec104431",
+      "size": 2815,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/networks.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/networks.json",
+      "sha256": "2c9bbed0676d358e2f2b0558c04abaf8f41ed2e2af2f4ebf8fd86f34c0f4435a",
+      "size": 12215,
+      "kind": "catalog"
+    },
+    {
+      "path": "aihub-0.5.8-macos-arm64.dmg",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.8/aihub-0.5.8-macos-arm64.dmg",
+      "sha256": "5d1052d3e6013ab32907c4fa24190fff2d272147412aa944f737bab61e94ab95",
+      "size": 22666212,
+      "kind": "installer",
+      "os": "macos",
+      "arch": "arm64"
+    },
+    {
+      "path": "aihub-0.5.8-macos-x64.dmg",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.8/aihub-0.5.8-macos-x64.dmg",
+      "sha256": "9a3f17e2d7c47300f7a5547bfa7a3bce5513a0e72e9c2bd397d0baabad2d5f0f",
+      "size": 25168322,
+      "kind": "installer",
+      "os": "macos",
+      "arch": "x64"
+    },
+    {
+      "path": "aihub-0.5.8-windows-x64-setup.exe",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.8/aihub-0.5.8-windows-x64-setup.exe",
+      "sha256": "52c9cc62db311b34275622b1ad3a8181d8e0b78d0be8c070c53c46597d17d502",
+      "size": 19879799,
+      "kind": "installer",
+      "os": "windows",
+      "arch": "x64"
+    }
+  ]
+}
