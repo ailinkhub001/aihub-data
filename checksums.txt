@@ -1,0 +1,1 @@
+f3ba0065f8d2a282b427d7f100d0e85c0fb5256e7dfc6bf2b923082bf437a7fa  aihub-0.5.12-windows-x64-setup.exe
