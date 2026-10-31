@@ -1,0 +1,6521 @@
+{
+  "version": 1,
+  "apps": {
+    "claude-cli": {
+      "display_name": "Claude Code",
+      "description": "Claude Code 是一个AI代理工具，由 Anthropic 开发。编程，工作，日常最常用的AI工具之一",
+      "homepage": "https://code.claude.com/",
+      "app_type": "cli",
+      "detect_names": [
+        "claude"
+      ],
+      "recommended": true,
+      "requires_prerequisites": true,
+      "latest_news": {
+        "url": "https://code.claude.com/docs/en/changelog#2-1-316",
+        "title": "Claude Code 2.1.316 已发布"
+      },
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@anthropic-ai/claude-code@latest",
+            "--allow-scripts=@anthropic-ai/claude-code"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "claude-code"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "programs": [
+            "sh"
+          ],
+          "args": [
+            "-c",
+            "curl -fsSL https://claude.ai/install.sh | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AYwBsAGEAdQBkAGUALgBhAGkALwBpAG4AcwB0AGEAbABsAC4AcABzADEAIAB8ACAAaQBlAHgA"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "cmd"
+          ],
+          "args": [
+            "/c",
+            "curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Anthropic.ClaudeCode"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://claude.com/product/claude-code"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "claude-code"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Anthropic.ClaudeCode"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@anthropic-ai/claude-code"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "~/.local/bin/claude",
+            "~/.local/share/claude"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "program": "cmd",
+          "args": [
+            "/c",
+            "del /f /q \"%USERPROFILE%\\.local\\bin\\claude.exe\" & rd /s /q \"%USERPROFILE%\\.local\\share\\claude\""
+          ],
+          "requires": []
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://code.claude.com/docs/en/setup#uninstall-claude-code"
+        }
+      ],
+      "purge_paths": [
+        {
+          "platforms": 7,
+          "path": "~/.claude",
+          "description": "配置文件与会话数据"
+        },
+        {
+          "platforms": 7,
+          "path": "~/.claude.json",
+          "description": "项目授权与用户凭证"
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "claude",
+          "args": [
+            "update"
+          ],
+          "requires": [
+            "claude"
+          ]
+        }
+      ],
+      "version_info": {
+        "latest": "2.1.316",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:51:20Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US"
+    },
+    "claude-desktop": {
+      "display_name": "Claude Desktop",
+      "description": "Claude 桌面客户端。",
+      "homepage": "https://claude.com/download",
+      "app_type": "gui",
+      "detect_names": [
+        "Claude.app",
+        "Claude"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.claude.ai/releases/win32/x64/4.4212.0/ClaudeSetup-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.claude.ai/releases/win32/x64/4.4212.0/Claude-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.msix",
+          "file_kind": "msix",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.claude.ai/releases/win32/arm64/4.4212.0/ClaudeSetup-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.claude.ai/releases/win32/arm64/4.4212.0/Claude-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.msix",
+          "file_kind": "msix",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://downloads.claude.ai/releases/darwin/universal/4.4212.0/Claude-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "claude"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Anthropic.Claude"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://claude.com/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Anthropic.Claude"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "claude"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Claude.app"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "program": "powershell",
+          "args": [
+            "-NoProfile",
+            "-Command",
+            "Get-AppxPackage -Name Claude | Remove-AppxPackage"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Claude"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://claude.com/download"
+        }
+      ],
+      "purge_paths": [
+        {
+          "platforms": 2,
+          "path": "~/Library/Application Support/Claude",
+          "description": "应用配置与会话数据"
+        },
+        {
+          "platforms": 1,
+          "path": "%APPDATA%\\Claude",
+          "description": "应用配置与会话数据"
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.claude.ai/releases/win32/x64/4.4212.0/ClaudeSetup-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.claude.ai/releases/win32/x64/4.4212.0/Claude-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.msix",
+          "file_kind": "msix",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.claude.ai/releases/win32/arm64/4.4212.0/ClaudeSetup-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.claude.ai/releases/win32/arm64/4.4212.0/Claude-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.msix",
+          "file_kind": "msix",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://downloads.claude.ai/releases/darwin/universal/4.4212.0/Claude-cbfe3c56d49c49332ad5a9588303c9dbc70a5e7f.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "claude"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Anthropic.Claude"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://claude.com/download"
+        }
+      ],
+      "latest_news": {
+        "url": "https://claude.com/docs/cowork/changelog#v4-4212-0",
+        "title": "Claude Desktop 4.4212.0 已发布"
+      },
+      "version_info": {
+        "latest": "4.4212.0",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:51:26Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US"
+    },
+    "antigravity": {
+      "display_name": "Antigravity CLI",
+      "description": "Google Antigravity CLI（命令名 agy）：由 Gemini 驱动的终端智能体，支持多智能体协作、沙箱权限控制与自动化任务调度。仅收录 CLI，不含 Antigravity IDE / 桌面客户端。",
+      "homepage": "https://antigravity.google/docs/cli/install",
+      "app_type": "cli",
+      "detect_names": [
+        "agy"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "antigravity-cli"
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AYQBuAHQAaQBnAHIAYQB2AGkAdAB5AC4AZwBvAG8AZwBsAGUALwBjAGwAaQAvAGkAbgBzAHQAYQBsAGwALgBwAHMAMQAgAHwAIABpAGUAeAA="
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "cmd"
+          ],
+          "args": [
+            "/c",
+            "curl -fsSL https://antigravity.google/cli/install.cmd -o install.cmd && install.cmd && del install.cmd"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://antigravity.google/cli/install.sh | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Google.AntigravityCLI"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://antigravity.google/docs/cli/install"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "antigravity-cli"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Google.AntigravityCLI"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "~/.local/bin/agy"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "pwsh",
+            "powershell"
+          ],
+          "args": [
+            "-c",
+            "Remove-Item -Force \"$env:USERPROFILE\\.local\\bin\\agy.exe\""
+          ],
+          "requires": []
+        }
+      ],
+      "purge_paths": [
+        {
+          "platforms": 7,
+          "path": "~/.antigravity",
+          "description": "配置文件与数据"
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "antigravity-cli"
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AYQBuAHQAaQBnAHIAYQB2AGkAdAB5AC4AZwBvAG8AZwBsAGUALwBjAGwAaQAvAGkAbgBzAHQAYQBsAGwALgBwAHMAMQAgAHwAIABpAGUAeAA="
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "cmd"
+          ],
+          "args": [
+            "/c",
+            "curl -fsSL https://antigravity.google/cli/install.cmd -o install.cmd && install.cmd && del install.cmd"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://antigravity.google/cli/install.sh | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Google.AntigravityCLI"
+        }
+      ],
+      "latest_news": {
+        "url": "https://github.com/google-antigravity/antigravity-cli/releases/tag/1.4.9",
+        "title": "Antigravity CLI 1.4.9 已发布"
+      },
+      "version_info": {
+        "latest": "1.4.12",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:52:01Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US"
+    },
+    "workbuddy": {
+      "display_name": "WorkBuddy",
+      "description": "AI 助手与自动化工作台，集成多源技能与 MCP 能力。",
+      "homepage": "https://www.workbuddy.cn/",
+      "app_type": "gui",
+      "detect_names": [
+        "WorkBuddy",
+        "CodeBuddy"
+      ],
+      "recommended": true,
+      "latest_news": {
+        "url": "https://www.workbuddy.ai/docs/workbuddy/Changelog",
+        "title": "WorkBuddy 5.9.4 已发布"
+      },
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://download.codebuddy.cn/workbuddy/saas/win32-x64-user/WorkBuddy-win32-x64-user-5.9.3.42398134-d4692421.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://download.codebuddy.cn/workbuddy/saas/darwin-arm64/WorkBuddy-darwin-arm64-5.9.3.42398134-d4692421.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://download.codebuddy.cn/workbuddy/saas/darwin-x64/WorkBuddy-darwin-x64-5.9.3.42398134-d4692421.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Tencent.WorkBuddy"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.workbuddy.cn/"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Tencent.WorkBuddy"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/WorkBuddy.app",
+            "~/Library/Application Support/WorkBuddy"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "WorkBuddy"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.workbuddy.cn/"
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://download.codebuddy.cn/workbuddy/saas/win32-x64-user/WorkBuddy-win32-x64-user-5.9.3.42398134-d4692421.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://download.codebuddy.cn/workbuddy/saas/darwin-arm64/WorkBuddy-darwin-arm64-5.9.3.42398134-d4692421.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://download.codebuddy.cn/workbuddy/saas/darwin-x64/WorkBuddy-darwin-x64-5.9.3.42398134-d4692421.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Tencent.WorkBuddy"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.workbuddy.cn/"
+        }
+      ],
+      "version_info": {
+        "latest": "5.9.3.42398134",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:51:49Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "CN"
+    },
+    "codex": {
+      "display_name": "Codex CLI",
+      "description": "OpenAI 开源的轻量级终端编码代理，可在本地编辑文件、运行命令并集成进工作流。",
+      "homepage": "https://github.com/openai/codex",
+      "app_type": "cli",
+      "detect_names": [
+        "codex"
+      ],
+      "recommended": true,
+      "requires_prerequisites": true,
+      "latest_news": {
+        "url": "https://developers.openai.com/codex/changelog/#github-release-428320524",
+        "title": "Codex CLI Release: 0.166.0"
+      },
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@openai/codex@latest",
+            "--allow-scripts=@openai/codex"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "codex"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://chatgpt.com/codex/install.sh | sh"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AYwBoAGEAdABnAHAAdAAuAGMAbwBtAC8AYwBvAGQAZQB4AC8AaQBuAHMAdABhAGwAbAAuAHAAcwAxACAAfAAgAGkAZQB4AA=="
+          ],
+          "requires": []
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "OpenAI.Codex"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://developers.openai.com/codex/cli/"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "codex"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "OpenAI.Codex"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@openai/codex"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "~/.local/bin/codex"
+          ],
+          "requires": []
+        }
+      ],
+      "purge_paths": [
+        {
+          "platforms": 7,
+          "path": "~/.codex",
+          "description": "配置文件与数据"
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "codex",
+          "args": [
+            "update"
+          ],
+          "requires": [
+            "codex"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "update",
+            "-g",
+            "@openai/codex",
+            "--allow-scripts=@openai/codex"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "codex"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://chatgpt.com/codex/install.sh | sh"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AYwBoAGEAdABnAHAAdAAuAGMAbwBtAC8AYwBvAGQAZQB4AC8AaQBuAHMAdABhAGwAbAAuAHAAcwAxACAAfAAgAGkAZQB4AA=="
+          ],
+          "requires": []
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "OpenAI.Codex"
+        }
+      ],
+      "version_info": {
+        "latest": null,
+        "method": "github_releases",
+        "fetched_at": "2026-10-31T21:51:15Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US"
+    },
+    "opencode": {
+      "display_name": "OpenCode",
+      "description": "SST 开发的开源 AI 编码代理，可在终端、桌面或 IDE 中使用，支持 75+ 模型。",
+      "homepage": "https://opencode.ai/",
+      "app_type": "cli",
+      "detect_names": [
+        "opencode"
+      ],
+      "recommended": true,
+      "latest_news": {
+        "url": "https://opencode.ai/changelog",
+        "title": "OpenCode 2.2.5 已发布"
+      },
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-windows-x64.zip",
+          "file_kind": "zip",
+          "arch": "x64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-windows-arm64.zip",
+          "file_kind": "zip",
+          "arch": "arm64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-darwin-arm64.zip",
+          "file_kind": "zip",
+          "arch": "arm64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-darwin-x64.zip",
+          "file_kind": "zip",
+          "arch": "x64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-linux-arm64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "opencode-ai@latest",
+            "--allow-scripts=opencode-ai"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "anomalyco/tap/opencode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "scoop",
+          "id": "opencode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "chocolatey",
+          "id": "opencode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "opencode"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://opencode.ai/install | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://opencode.ai/"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "anomalyco/tap/opencode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "scoop",
+          "id": "opencode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "chocolatey",
+          "id": "opencode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "opencode"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "opencode-ai"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "~/.opencode"
+          ],
+          "requires": []
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "opencode",
+          "args": [
+            "upgrade"
+          ],
+          "requires": [
+            "opencode"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-windows-x64.zip",
+          "file_kind": "zip",
+          "arch": "x64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-windows-arm64.zip",
+          "file_kind": "zip",
+          "arch": "arm64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-darwin-arm64.zip",
+          "file_kind": "zip",
+          "arch": "arm64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-darwin-x64.zip",
+          "file_kind": "zip",
+          "arch": "x64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-linux-arm64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64",
+          "install_location": "~/.opencode/bin"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "update",
+            "-g",
+            "opencode-ai",
+            "--allow-scripts=opencode-ai"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "anomalyco/tap/opencode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "scoop",
+          "id": "opencode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "chocolatey",
+          "id": "opencode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "pacman",
+          "id": "opencode"
+        }
+      ],
+      "version_info": {
+        "latest": "2.2.5",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:51:52Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US"
+    },
+    "gemini": {
+      "display_name": "Gemini CLI",
+      "description": "Google 开源的终端 AI 代理，将 Gemini 的能力直接带入命令行。",
+      "homepage": "https://github.com/google-gemini/gemini-cli",
+      "app_type": "cli",
+      "detect_names": [
+        "gemini"
+      ],
+      "recommended": false,
+      "latest_news": {
+        "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0",
+        "title": "Gemini CLI 0.66.0 已发布"
+      },
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@google/gemini-cli@latest",
+            "--allow-scripts=@google/gemini-cli"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "gemini-cli"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/google-gemini/gemini-cli"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "gemini-cli"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@google/gemini-cli"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "update",
+            "-g",
+            "@google/gemini-cli",
+            "--allow-scripts=@google/gemini-cli"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "gemini-cli"
+        }
+      ],
+      "version_info": {
+        "latest": "0.66.0",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:52:07Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US"
+    },
+    "grok": {
+      "display_name": "Grok Build",
+      "description": "xAI 开发的终端 AI 编码代理，提供全屏 TUI，支持理解代码库、执行编辑与命令、联网搜索。",
+      "homepage": "https://x.ai/cli",
+      "app_type": "cli",
+      "detect_names": [
+        "grok"
+      ],
+      "recommended": false,
+      "latest_news": {
+        "url": "https://x.ai/changelog/build#v1.0.70-2026-10-23",
+        "title": "Grok Build 1.0.70"
+      },
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://x.ai/cli/install.sh | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AeAAuAGEAaQAvAGMAbABpAC8AaQBuAHMAdABhAGwAbAAuAHAAcwAxACAAfAAgAGkAZQB4AA=="
+          ],
+          "requires": []
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://x.ai/cli"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "~/.grok",
+            "~/.local/bin/grok"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "pwsh",
+            "powershell"
+          ],
+          "args": [
+            "-c",
+            "Remove-Item -Recurse -Force \"$env:USERPROFILE\\.grok\""
+          ],
+          "requires": []
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "grok",
+          "args": [
+            "update"
+          ],
+          "requires": [
+            "grok"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://x.ai/cli/install.sh | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AeAAuAGEAaQAvAGMAbABpAC8AaQBuAHMAdABhAGwAbAAuAHAAcwAxACAAfAAgAGkAZQB4AA=="
+          ],
+          "requires": []
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://x.ai/cli"
+        }
+      ],
+      "version_info": {
+        "latest": "1.0.70",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:52:13Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US"
+    },
+    "deepseek-harness": {
+      "display_name": "DeepSeek Harness",
+      "description": "DeepSeek 官方 AI Harness 框架与 Web 服务。",
+      "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+      "app_type": "cli",
+      "detect_names": [
+        "dsh"
+      ],
+      "recommended": false,
+      "requires_prerequisites": true,
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "install",
+            "-g",
+            "@deepseek-ai/dsh"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@deepseek-ai/dsh"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "version_info": {
+        "latest": "0.2.1-rc.5",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:51:58Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "CN",
+      "latest_news": {
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-alpha.2",
+        "title": "DeepSeek Harness 0.2.2-alpha.2 已发布"
+      }
+    },
+    "openclaw": {
+      "display_name": "OpenClaw",
+      "description": "多通道 AI 网关，支持可扩展的消息集成。",
+      "homepage": "https://github.com/openclaw/openclaw",
+      "app_type": "cli",
+      "detect_names": [
+        "openclaw"
+      ],
+      "recommended": false,
+      "requires_prerequisites": true,
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "openclaw@latest",
+            "--allow-scripts=openclaw"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://openclaw.ai/install.sh | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AbwBwAGUAbgBjAGwAYQB3AC4AYQBpAC8AaQBuAHMAdABhAGwAbAAuAHAAcwAxACAAfAAgAGkAZQB4AA=="
+          ],
+          "requires": []
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "openclaw",
+          "args": [
+            "uninstall",
+            "--service",
+            "--yes",
+            "--non-interactive"
+          ],
+          "requires": [
+            "openclaw"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "openclaw"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "~/.local/bin/openclaw"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "pwsh",
+            "powershell"
+          ],
+          "args": [
+            "-c",
+            "Remove-Item -Force \"$env:USERPROFILE\\.local\\bin\\openclaw.exe\" -ErrorAction SilentlyContinue"
+          ],
+          "requires": []
+        }
+      ],
+      "purge_paths": [
+        {
+          "platforms": 6,
+          "path": "~/.openclaw",
+          "description": "配置文件与会话数据"
+        },
+        {
+          "platforms": 1,
+          "path": "%USERPROFILE%\\.openclaw",
+          "description": "配置文件与会话数据"
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "openclaw",
+          "args": [
+            "update",
+            "--yes"
+          ],
+          "requires": [
+            "openclaw"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "update",
+            "-g",
+            "openclaw",
+            "--allow-scripts=openclaw"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://openclaw.ai/install.sh | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AbwBwAGUAbgBjAGwAYQB3AC4AYQBpAC8AaQBuAHMAdABhAGwAbAAuAHAAcwAxACAAfAAgAGkAZQB4AA=="
+          ],
+          "requires": []
+        }
+      ],
+      "version_info": {
+        "latest": "2026.10.9",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:52:00Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US",
+      "latest_news": {
+        "url": "https://openclaw.ai/blog/openclaw-focus-weeks/",
+        "title": "Come Build With Us: OpenClaw Focus Weeks"
+      }
+    },
+    "hermes": {
+      "display_name": "Hermes Agent",
+      "description": "Nous Research 开发的开源自主 AI 代理，具备持久记忆与自建技能能力。",
+      "homepage": "https://github.com/NousResearch/hermes-agent",
+      "app_type": "cli",
+      "detect_names": [
+        "hermes"
+      ],
+      "recommended": false,
+      "requires_prerequisites": true,
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash -s -- --non-interactive --skip-setup"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AaABlAHIAbQBlAHMALQBhAGcAZQBuAHQALgBuAG8AdQBzAHIAZQBzAGUAYQByAGMAaAAuAGMAbwBtAC8AaQBuAHMAdABhAGwAbAAuAHAAcwAxACAAfAAgAGkAZQB4AA=="
+          ],
+          "requires": []
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/NousResearch/hermes-agent"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "hermes",
+          "args": [
+            "dashboard",
+            "--stop"
+          ],
+          "requires": [
+            "hermes"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "hermes",
+          "args": [
+            "uninstall",
+            "--full",
+            "--yes"
+          ],
+          "requires": [
+            "hermes"
+          ]
+        }
+      ],
+      "purge_paths": [
+        {
+          "platforms": 6,
+          "path": "~/.hermes",
+          "description": "Hermes Agent 配置文件、技能与持久记忆数据"
+        },
+        {
+          "platforms": 1,
+          "path": "%USERPROFILE%\\.hermes",
+          "description": "Hermes Agent 配置文件、技能与持久记忆数据"
+        },
+        {
+          "platforms": 1,
+          "path": "%LOCALAPPDATA%\\hermes",
+          "description": "Hermes Agent Windows 本地数据目录"
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "hermes",
+          "args": [
+            "update"
+          ],
+          "requires": [
+            "hermes"
+          ]
+        }
+      ],
+      "version_info": {
+        "latest": null,
+        "method": "error",
+        "confidence": "none"
+      },
+      "updatable": true,
+      "country_code": "US",
+      "latest_news": {
+        "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.5",
+        "title": "Hermes Agent v0.22.5"
+      }
+    },
+    "cursor": {
+      "display_name": "Cursor",
+      "description": "基于 VS Code 的 AI 原生代码编辑器，支持全库上下文编辑。",
+      "homepage": "https://www.cursor.com/",
+      "app_type": "gui",
+      "detect_names": [
+        "Cursor"
+      ],
+      "recommended": false,
+      "latest_news": {
+        "url": "https://cursor.com/changelog/agent-sdk",
+        "title": "Agent SDK"
+      },
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/win32/x64/user-setup/CursorUserSetup-x64-3.27.22.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/win32/arm64/user-setup/CursorUserSetup-arm64-3.27.22.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/darwin/arm64/Cursor-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/darwin/x64/Cursor-darwin-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/linux/x64/Cursor-3.27.22-x86_64.AppImage",
+          "file_kind": "appimage",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/linux/x64/deb/amd64/deb/cursor_3.27.22_amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/linux/arm64/Cursor-3.27.22-aarch64.AppImage",
+          "file_kind": "appimage",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/linux/arm64/deb/arm64/deb/cursor_3.27.22_arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "cursor",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Anysphere.Cursor"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.cursor.com/"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Anysphere.Cursor"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "cursor"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "cursor"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "cursor"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Cursor.app"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "uninstaller",
+          "platforms": 1,
+          "id": "unins*.exe",
+          "args": [
+            "/SILENT",
+            "/NORESTART"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Cursor"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.cursor.com/"
+        }
+      ],
+      "purge_paths": [
+        {
+          "platforms": 2,
+          "path": "~/Library/Application Support/Cursor",
+          "description": "应用配置与会话数据"
+        },
+        {
+          "platforms": 4,
+          "path": "~/.config/Cursor",
+          "description": "应用配置与会话数据"
+        },
+        {
+          "platforms": 1,
+          "path": "%APPDATA%\\Cursor",
+          "description": "应用配置与会话数据"
+        },
+        {
+          "platforms": 7,
+          "path": "~/.cursor",
+          "description": "扩展与插件目录"
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/win32/x64/user-setup/CursorUserSetup-x64-3.27.22.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/win32/arm64/user-setup/CursorUserSetup-arm64-3.27.22.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/darwin/arm64/Cursor-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/darwin/x64/Cursor-darwin-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/linux/x64/Cursor-3.27.22-x86_64.AppImage",
+          "file_kind": "appimage",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/linux/x64/deb/amd64/deb/cursor_3.27.22_amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/linux/arm64/Cursor-3.27.22-aarch64.AppImage",
+          "file_kind": "appimage",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://downloads.cursor.com/production/b1aa50cb6db84fd3e8c808259cb172ea73425c1f/linux/arm64/deb/arm64/deb/cursor_3.27.22_arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "cursor",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Anysphere.Cursor"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.cursor.com/"
+        }
+      ],
+      "version_info": {
+        "latest": "3.27.22",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:52:20Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US"
+    },
+    "lm-studio": {
+      "display_name": "LM Studio",
+      "description": "桌面端模型浏览器与推理 GUI，支持 GGUF。",
+      "homepage": "https://lmstudio.ai/developers",
+      "app_type": "gui",
+      "detect_names": [
+        "LM Studio"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://installers.lmstudio.ai/win32/x64/0.4.28-2/LM-Studio-0.4.28-2-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://installers.lmstudio.ai/win32/arm64/0.4.28-2/LM-Studio-0.4.28-2-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://installers.lmstudio.ai/darwin/arm64/0.4.28-2/LM-Studio-0.4.28-2-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "lm-studio",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ElementLabs.LMStudio"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://lmstudio.ai/"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ElementLabs.LMStudio"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "lm-studio",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/LM Studio.app"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "uninstaller",
+          "platforms": 1,
+          "id": "Uninstall LM Studio.exe",
+          "args": [
+            "/S"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "LM Studio"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://lmstudio.ai/developers"
+        }
+      ],
+      "purge_paths": [
+        {
+          "platforms": 2,
+          "path": "~/Library/Application Support/LM Studio",
+          "description": "应用配置与会话数据"
+        },
+        {
+          "platforms": 7,
+          "path": "~/.lmstudio",
+          "description": "配置文件与状态"
+        },
+        {
+          "platforms": 7,
+          "path": "~/.cache/lm-studio",
+          "description": "本地模型缓存与运行环境"
+        }
+      ],
+      "kind": "software",
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://installers.lmstudio.ai/win32/x64/0.4.28-2/LM-Studio-0.4.28-2-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://installers.lmstudio.ai/win32/arm64/0.4.28-2/LM-Studio-0.4.28-2-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://installers.lmstudio.ai/darwin/arm64/0.4.28-2/LM-Studio-0.4.28-2-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "lm-studio",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ElementLabs.LMStudio"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://lmstudio.ai/"
+        }
+      ],
+      "latest_news": {
+        "url": "https://lmstudio.ai/blog/splash-engine",
+        "title": "Splash Engine - the fastest local Qwen3.8 on Apple Silicon"
+      },
+      "version_info": {
+        "latest": "0.4.28-2",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:51:31Z",
+        "confidence": "high"
+      },
+      "updatable": true,
+      "country_code": "US"
+    },
+    "cherry-studio": {
+      "display_name": "Cherry Studio",
+      "description": "跨平台多模型桌面客户端，内置知识库、MCP 与多家 LLM 提供商聚合。",
+      "homepage": "https://www.cherryai.com",
+      "app_type": "gui",
+      "detect_names": [
+        "Cherry Studio"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "cherry-studio",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "kangfenmao.CherryStudio"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.cherryai.com/download/"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "kangfenmao.CherryStudio"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "cherry-studio"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "cherrystudio"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "cherrystudio"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Cherry Studio.app",
+            "~/Library/Application Support/CherryStudio"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 4,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "~/.config/CherryStudio"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Cherry Studio"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.cherryai.com"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "cherry-studio",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "kangfenmao.CherryStudio"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.cherryai.com/download/"
+        }
+      ],
+      "version_info": {
+        "latest": null,
+        "method": "error",
+        "confidence": "none"
+      },
+      "latest_news": {
+        "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v2.1.8",
+        "title": "Cherry Studio 2.1.8 已发布"
+      },
+      "country_code": "CN"
+    },
+    "doubao": {
+      "display_name": "豆包",
+      "description": "字节跳动出品的 AI 助手桌面客户端，支持对话、AI 编程与浏览器侧边栏。",
+      "homepage": "https://www.doubao.com/download",
+      "app_type": "gui",
+      "detect_names": [
+        "豆包",
+        "Doubao"
+      ],
+      "recommended": true,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.25.16/Doubao_online_installer_2.25.16.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.25.16/Doubao_Arm64_online_installer_2.25.16.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.33.5/Doubao_universal_2.33.5.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.33.5/Doubao_Arm64_2.33.5.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.33.5/Doubao_X64_2.33.5.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "doubao",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ByteDance.Doubao"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.doubao.com/download/desktop"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ByteDance.Doubao"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "doubao"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Doubao.app",
+            "~/Library/Application Support/Doubao"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "豆包"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.doubao.com/download"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.25.16/Doubao_online_installer_2.25.16.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.25.16/Doubao_Arm64_online_installer_2.25.16.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.33.5/Doubao_universal_2.33.5.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.33.5/Doubao_Arm64_2.33.5.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.33.5/Doubao_X64_2.33.5.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "doubao",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ByteDance.Doubao"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.doubao.com/download/desktop"
+        }
+      ],
+      "version_info": {
+        "latest": "2.33.5",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:52:28Z",
+        "confidence": "high"
+      },
+      "country_code": "CN",
+      "latest_news": {
+        "title": "豆包桌面端由字节跳动出品，更新动态以应用内公告为准。"
+      }
+    },
+    "zcode": {
+      "display_name": "ZCode",
+      "description": "智谱推出的 AI 编程桌面客户端，基于 GLM 系列模型。",
+      "homepage": "https://zcode.z.ai",
+      "app_type": "gui",
+      "detect_names": [
+        "ZCode"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/windows-x64/ZCode-3.16.3-win-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/windows-arm64/ZCode-3.16.3-win-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/macos-arm64/ZCode-3.16.3-mac-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/macos-x64/ZCode-3.16.3-mac-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/linux-x64/ZCode-3.16.3-linux-x64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/linux-x64/ZCode-3.16.3-linux-x64.AppImage",
+          "file_kind": "appimage",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/linux-arm64/ZCode-3.16.3-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/linux-arm64/ZCode-3.16.3-linux-arm64.AppImage",
+          "file_kind": "appimage",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "zcode",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ZhipuAI.ZCode"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://zcode.z.ai/cn"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ZhipuAI.ZCode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "zcode"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "zcode"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/ZCode.app",
+            "~/Library/Application Support/ZCode"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "uninstaller",
+          "platforms": 1,
+          "id": "Uninstall ZCode.exe",
+          "args": [
+            "/S"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "ZCode"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://zcode.z.ai/cn"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/windows-x64/ZCode-3.16.3-win-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/windows-arm64/ZCode-3.16.3-win-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/macos-arm64/ZCode-3.16.3-mac-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/macos-x64/ZCode-3.16.3-mac-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/linux-x64/ZCode-3.16.3-linux-x64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/linux-x64/ZCode-3.16.3-linux-x64.AppImage",
+          "file_kind": "appimage",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/linux-arm64/ZCode-3.16.3-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://cdn-zcode.z.ai/zcode/electron/releases/3.16.3/linux-arm64/ZCode-3.16.3-linux-arm64.AppImage",
+          "file_kind": "appimage",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "zcode",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ZhipuAI.ZCode"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://zcode.z.ai/cn"
+        }
+      ],
+      "version_info": {
+        "latest": "3.16.3",
+        "method": "scrape",
+        "confidence": "high",
+        "fetched_at": "2026-10-31T21:52:36Z"
+      },
+      "latest_news": {
+        "url": "https://zcode.z.ai/cn/changelog",
+        "title": "ZCode 3.16.3 已发布"
+      },
+      "country_code": "CN"
+    },
+    "kiro": {
+      "display_name": "Kiro",
+      "description": "AWS 推出的 AI IDE，主打规格驱动开发（spec-driven development）。",
+      "homepage": "https://kiro.dev",
+      "app_type": "gui",
+      "detect_names": [
+        "Kiro"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/win32-x64/signed/1.4.62/kiro-ide-1.4.62-stable-win32-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/win32-arm64/signed/1.4.62/kiro-ide-1.4.62-stable-win32-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.4.62/kiro-ide-1.4.62-stable-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-x64/signed/1.4.62/kiro-ide-1.4.62-stable-darwin-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/1.4.62/deb/kiro-ide-1.4.62-stable-linux-x64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/1.4.62/tar/kiro-ide-1.4.62-stable-linux-x64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/linux-arm64/signed/1.4.62/deb/kiro-ide-1.4.62-stable-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/linux-arm64/signed/1.4.62/tar/kiro-ide-1.4.62-stable-linux-arm64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "kiro",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Amazon.Kiro"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://kiro.dev/downloads/"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Amazon.Kiro"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "kiro"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "kiro"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Kiro.app",
+            "~/Library/Application Support/Kiro"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "uninstaller",
+          "platforms": 1,
+          "id": "unins*.exe",
+          "args": [
+            "/SILENT",
+            "/NORESTART"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Kiro"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://kiro.dev"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/win32-x64/signed/1.4.62/kiro-ide-1.4.62-stable-win32-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/win32-arm64/signed/1.4.62/kiro-ide-1.4.62-stable-win32-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.4.62/kiro-ide-1.4.62-stable-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-x64/signed/1.4.62/kiro-ide-1.4.62-stable-darwin-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/1.4.62/deb/kiro-ide-1.4.62-stable-linux-x64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/1.4.62/tar/kiro-ide-1.4.62-stable-linux-x64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/linux-arm64/signed/1.4.62/deb/kiro-ide-1.4.62-stable-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://prod.download.desktop.kiro.dev/releases/stable/linux-arm64/signed/1.4.62/tar/kiro-ide-1.4.62-stable-linux-arm64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "kiro",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "Amazon.Kiro"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://kiro.dev/downloads/"
+        }
+      ],
+      "version_info": {
+        "latest": "1.4.62",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:52:43Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://kiro.dev/changelog/",
+        "title": "Approve for Me, Subcommand Approval Rules, and an ACP Engine Setting"
+      },
+      "country_code": "US"
+    },
+    "trae": {
+      "display_name": "Trae (国际版)",
+      "description": "字节跳动出品的 AI 原生 IDE（国际版），集成了 Claude、GPT 等海外前沿模型与智能 Agent 协作能力。",
+      "homepage": "https://www.trae.ai",
+      "app_type": "gui",
+      "detect_names": [
+        "Trae"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://lf-static.traecdn.us/obj/trae-ai-tx/pkg/app/releases/stable/2.3.93439/win32/TRAE-Setup-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-static.traecdn.us/obj/trae-ai-tx/pkg/app/releases/stable/2.3.93439/darwin/TRAE-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-static.traecdn.us/obj/trae-ai-tx/pkg/app/releases/stable/2.3.93439/darwin/TRAE-darwin-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-x64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-x64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-x64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-arm64.rpm",
+          "file_kind": "rpm",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-static.traecdn.us/obj/trae-ai-tx/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-arm64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "trae",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ByteDance.Trae"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.trae.ai/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ByteDance.Trae"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "trae"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Trae.app",
+            "~/Library/Application Support/Trae"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Trae"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.trae.ai"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://lf-static.traecdn.us/obj/trae-ai-tx/pkg/app/releases/stable/2.3.93439/win32/TRAE-Setup-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-static.traecdn.us/obj/trae-ai-tx/pkg/app/releases/stable/2.3.93439/darwin/TRAE-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-static.traecdn.us/obj/trae-ai-tx/pkg/app/releases/stable/2.3.93439/darwin/TRAE-darwin-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-x64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-x64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-x64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-arm64.rpm",
+          "file_kind": "rpm",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-static.traecdn.us/obj/trae-ai-tx/pkg/app/releases/stable/2.3.93439/linux/TRAE-linux-arm64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "trae",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ByteDance.Trae"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.trae.ai/download"
+        }
+      ],
+      "version_info": {
+        "latest": "3.6.4",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:52:47Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://docs.trae.ai/ide/changelog",
+        "title": "TRAE v3.6.1 ~ 3.6.4 are released"
+      },
+      "country_code": "US"
+    },
+    "trae-cn": {
+      "display_name": "Trae (国内版)",
+      "description": "字节跳动出品的 AI 原生 IDE（国内版），专为中文开发者打造，深度集成豆包与 DeepSeek 等大模型。",
+      "homepage": "https://www.trae.cn",
+      "app_type": "gui",
+      "detect_names": [
+        "Trae CN"
+      ],
+      "recommended": true,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/win32/TRAE_CN-Setup-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/darwin/TRAE_CN-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/darwin/TRAE_CN-darwin-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-x64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-x64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-x64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-arm64.rpm",
+          "file_kind": "rpm",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-arm64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "trae-cn"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "apt",
+          "id": "trae-cn"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 4,
+          "manager": "dnf",
+          "id": "trae-cn"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ByteDance.Trae.CN"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.trae.cn"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ByteDance.Trae.CN"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "trae-cn"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Trae CN.app",
+            "~/Library/Application Support/Trae CN"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Trae CN"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.trae.cn"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/win32/TRAE_CN-Setup-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/darwin/TRAE_CN-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/darwin/TRAE_CN-darwin-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-x64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-x64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-x64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-arm64.rpm",
+          "file_kind": "rpm",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.98528/linux/TRAE_CN-linux-arm64.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "args": [
+            "--cask"
+          ],
+          "id": "trae-cn"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ByteDance.Trae.CN"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.trae.cn"
+        }
+      ],
+      "version_info": {
+        "latest": "3.4.11",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:52:54Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://docs.trae.cn/ide_changelog",
+        "title": "TRAE v3.4.1 ～ 3.4.4 版本正式发布"
+      },
+      "country_code": "CN"
+    },
+    "antigravity-desktop": {
+      "display_name": "Antigravity Desktop",
+      "description": "Google 出品的 AI 原生桌面客户端（Antigravity Desktop），基于 Electron，支持多模型对话与云端代理。",
+      "homepage": "https://antigravity.google/download",
+      "app_type": "gui",
+      "detect_names": [
+        "Antigravity Desktop",
+        "Antigravity"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/windows-x64/Antigravity-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/windows-arm/Antigravity-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/darwin-arm/Antigravity.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/darwin-x64/Antigravity.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/linux-x64/Antigravity.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/linux-arm/Antigravity.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://antigravity.google/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Antigravity.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Antigravity"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://antigravity.google/download"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/windows-x64/Antigravity-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/windows-arm/Antigravity-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/darwin-arm/Antigravity.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/darwin-x64/Antigravity.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/linux-x64/Antigravity.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.28.2-5937220255875072/linux-arm/Antigravity.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://antigravity.google/download"
+        }
+      ],
+      "version_info": {
+        "latest": "2.28.2",
+        "method": "scrape",
+        "confidence": "high",
+        "fetched_at": "2026-10-31T21:52:03Z"
+      },
+      "latest_news": {
+        "url": "https://antigravity.google/blog/plugin-marketplace-in-antigravity",
+        "title": "Plugin Marketplace in Antigravity"
+      },
+      "country_code": "US"
+    },
+    "antigravity-ide": {
+      "display_name": "Antigravity IDE",
+      "description": "Google 出品的 AI 原生 IDE（Antigravity IDE），基于 VS Code，内置 Gemini 与云端代理。",
+      "homepage": "https://antigravity.google/download",
+      "app_type": "gui",
+      "detect_names": [
+        "Antigravity IDE"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/windows-x64/Antigravity%20IDE.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/windows-arm64/Antigravity%20IDE.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/darwin-arm/Antigravity%20IDE.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/darwin-x64/Antigravity%20IDE.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/linux-x64/Antigravity%20IDE.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/linux-arm/Antigravity%20IDE.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://antigravity.google/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Antigravity IDE.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Antigravity IDE"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://antigravity.google/download"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/windows-x64/Antigravity%20IDE.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/windows-arm64/Antigravity%20IDE.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/darwin-arm/Antigravity%20IDE.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/darwin-x64/Antigravity%20IDE.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/linux-x64/Antigravity%20IDE.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.6.0-5526304964083712/linux-arm/Antigravity%20IDE.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://antigravity.google/download"
+        }
+      ],
+      "version_info": {
+        "latest": "2.6.0",
+        "method": "scrape",
+        "confidence": "high",
+        "fetched_at": "2026-10-31T21:52:05Z"
+      },
+      "latest_news": {
+        "url": "https://antigravity.google/blog/plugin-marketplace-in-antigravity",
+        "title": "Plugin Marketplace in Antigravity"
+      },
+      "country_code": "US"
+    },
+    "opencode-desktop": {
+      "display_name": "OpenCode Desktop",
+      "description": "OpenCode 官方桌面客户端（GUI），基于终端 OpenCode 的图形化封装，支持多模型与本地会话管理。",
+      "homepage": "https://opencode.ai/download",
+      "app_type": "gui",
+      "detect_names": [
+        "OpenCode Desktop",
+        "OpenCode"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-win-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-win-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-arm64.app.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-arm64.zip",
+          "file_kind": "zip",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-x64.app.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-x64.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-x86_64.AppImage",
+          "file_kind": "appimage",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-x86_64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-arm64.AppImage",
+          "file_kind": "appimage",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-aarch64.rpm",
+          "file_kind": "rpm",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "opencode-desktop"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://opencode.ai/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "opencode-desktop"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/OpenCode Desktop.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "OpenCode Desktop"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://opencode.ai/download"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-win-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-win-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-arm64.app.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-arm64.zip",
+          "file_kind": "zip",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-x64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-x64.app.tar.gz",
+          "file_kind": "tar.gz",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-mac-x64.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-x86_64.AppImage",
+          "file_kind": "appimage",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-x86_64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-arm64.AppImage",
+          "file_kind": "appimage",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://opencode.ai/files/bin/2.2.5/opencode-desktop-linux-aarch64.rpm",
+          "file_kind": "rpm",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "opencode-desktop"
+        }
+      ],
+      "version_info": {
+        "latest": "2.2.5",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:51:55Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://opencode.ai/changelog",
+        "title": "OpenCode Desktop 2.2.5 已发布"
+      },
+      "country_code": "US"
+    },
+    "chatgpt-desktop": {
+      "display_name": "ChatGPT Desktop",
+      "description": "OpenAI 官方推出的 ChatGPT 桌面客户端（GUI，替代原 Codex 桌面版），集成 Codex 编程智能体能力，支持全局快捷唤起与本地应用联动。",
+      "homepage": "https://chatgpt.com/download",
+      "app_type": "gui",
+      "detect_names": [
+        "ChatGPT",
+        "ChatGPT Desktop",
+        "Codex",
+        "Codex Desktop"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://get.microsoft.com/installer/download/9PLM9XGG6VKS?cid=website_cta_psi",
+          "file_kind": "exe",
+          "args": [
+            "--silent"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1027.30824.zip",
+          "file_kind": "zip",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-x64-26.1027.30824.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "chatgpt"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://chatgpt.com/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "chatgpt"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/ChatGPT.app"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "program": "powershell",
+          "args": [
+            "-NoProfile",
+            "-Command",
+            "Get-AppxPackage -Name OpenAI.Codex | Remove-AppxPackage"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "ChatGPT"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://chatgpt.com/download"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://get.microsoft.com/installer/download/9PLM9XGG6VKS?cid=website_cta_psi",
+          "file_kind": "exe",
+          "args": [
+            "--silent"
+          ]
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1027.30824.zip",
+          "file_kind": "zip",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-x64-26.1027.30824.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "chatgpt"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://chatgpt.com/download"
+        }
+      ],
+      "version_info": {
+        "latest": "26.1027.30824",
+        "method": "brew_cask",
+        "fetched_at": "2026-10-31T21:52:22Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://developers.openai.com/codex/changelog/#codex-2026-10-08-gpt-61-sol-ultrafast",
+        "title": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work"
+      },
+      "country_code": "US"
+    },
+    "pi": {
+      "display_name": "Pi Agent Harness",
+      "description": "earendil-works 出品的终端 AI 编码代理（Pi），基于仓库上下文理解代码、执行编辑与命令，支持多模型与本地沙箱。",
+      "homepage": "https://github.com/earendil-works/pi",
+      "app_type": "cli",
+      "detect_names": [
+        "pi"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@earendil-works/pi-coding-agent",
+            "--allow-scripts=@earendil-works/pi-coding-agent"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://pi.dev/install.sh | sh"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AcABpAC4AZABlAHYALwBpAG4AcwB0AGEAbABsAC4AcABzADEAIAB8ACAAaQBlAHgA"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/earendil-works/pi/releases"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@earendil-works/pi-coding-agent"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "~/.local/bin/pi"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "pwsh",
+            "powershell"
+          ],
+          "args": [
+            "-c",
+            "Remove-Item -Force \"$env:USERPROFILE\\.local\\bin\\pi.exe\""
+          ],
+          "requires": []
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "pi",
+          "args": [
+            "update"
+          ],
+          "requires": [
+            "pi"
+          ]
+        }
+      ],
+      "version_info": {
+        "latest": null,
+        "method": "error",
+        "confidence": "none"
+      },
+      "latest_news": {
+        "url": "https://github.com/earendil-works/pi/releases/tag/v1.4.0",
+        "title": "Pi Agent Harness 1.4.0 已发布"
+      },
+      "country_code": "US"
+    },
+    "kimi-code": {
+      "display_name": "Kimi Code",
+      "description": "月之暗面官方 AI 编程 CLI（命令 kimi，Node ≥22.19），支持账号登录与 API Key 两种模式。",
+      "homepage": "https://www.kimi.com/code",
+      "app_type": "cli",
+      "detect_names": [
+        "kimi"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@moonshot-ai/kimi-code@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@moonshot-ai/kimi-code"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@moonshot-ai/kimi-code"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@moonshot-ai/kimi-code@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@moonshot-ai/kimi-code"
+        }
+      ],
+      "version_info": {
+        "latest": "2.4.1",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:52:57Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://github.com/MoonshotAI/kimi-code/releases/tag/%40moonshot-ai/kimi-code%402.3.3",
+        "title": "Kimi Code 2.3.3 已发布"
+      }
+    },
+    "minimax-code": {
+      "display_name": "MiniMax Code CLI",
+      "description": "MiniMax 官方终端编码智能体（命令 mcode），MIT 开源。",
+      "homepage": "https://github.com/MiniMax-AI/minimax-code",
+      "app_type": "cli",
+      "detect_names": [
+        "mcode"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@minimax-ai/code@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@minimax-ai/code"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@minimax-ai/code"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@minimax-ai/code@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@minimax-ai/code"
+        }
+      ],
+      "version_info": {
+        "latest": "0.7.4",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:52:59Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://github.com/MiniMax-AI/minimax-code/releases/tag/v0.6.5",
+        "title": "MiniMax Code 0.6.5"
+      }
+    },
+    "mimo-code": {
+      "display_name": "MiMo Code",
+      "description": "小米官方 AI 编程 CLI（命令 mimo），免登录开箱即用，默认使用小米免费多模态模型。",
+      "homepage": "https://mimo.xiaomi.com/coder",
+      "app_type": "cli",
+      "detect_names": [
+        "mimo"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@mimo-ai/cli@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@mimo-ai/cli"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@mimo-ai/cli"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@mimo-ai/cli@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@mimo-ai/cli"
+        }
+      ],
+      "version_info": {
+        "latest": "0.1.16",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:53:01Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://github.com/XiaomiMiMo/MiMo-Code/releases/tag/v0.1.16",
+        "title": "MiMo Code 0.1.16 已发布"
+      }
+    },
+    "qwen-code": {
+      "display_name": "Qwen Code",
+      "description": "阿里官方 AI 编程 CLI（命令 qwen），接入通义千问模型。",
+      "homepage": "https://github.com/QwenLM/qwen-code",
+      "app_type": "cli",
+      "detect_names": [
+        "qwen"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "qwen-code"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@qwen-code/qwen-code@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@qwen-code/qwen-code"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "qwen-code"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@qwen-code/qwen-code"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "qwen-code"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@qwen-code/qwen-code@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@qwen-code/qwen-code"
+        }
+      ],
+      "version_info": {
+        "latest": "0.26.4",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:53:03Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.2",
+        "title": "Qwen Code 0.26.2 已发布"
+      }
+    },
+    "copilot-cli": {
+      "display_name": "GitHub Copilot CLI",
+      "description": "GitHub 官方 Copilot 命令行智能体（命令 copilot），需 GitHub 账号与 Copilot 套餐（不向中国大陆提供）。",
+      "homepage": "https://github.com/features/copilot/cli",
+      "app_type": "cli",
+      "detect_names": [
+        "copilot"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "copilot-cli",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@github/copilot@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "GitHub.Copilot"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@github/copilot"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "copilot-cli",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "GitHub.Copilot"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@github/copilot"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "copilot-cli",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@github/copilot@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "GitHub.Copilot"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@github/copilot"
+        }
+      ],
+      "version_info": {
+        "latest": "1.0.105",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:53:08Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://github.com/github/copilot-cli/releases/tag/v1.0.105",
+        "title": "GitHub Copilot CLI 1.0.105 已发布"
+      }
+    },
+    "kimi-desktop": {
+      "display_name": "Kimi",
+      "description": "月之暗面官方桌面客户端；Apple Silicon 版含 Kimi Work 办公套件，Intel 版为 Kimi Chat。",
+      "homepage": "https://www.kimi.com/products/download",
+      "app_type": "gui",
+      "detect_names": [
+        "Kimi",
+        "Kimi.app"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://kimi-img.moonshot.cn/app/download/windows/kimi_3.2.23.exe",
+          "file_kind": "exe"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://kimi-img.moonshot.cn/app/download/mac/kimi_3.2.23.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://kimi-img.moonshot.cn/app/download/macos_x64/kimi_3.0.12.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "kimi",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.kimi.com/products/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "kimi",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Kimi.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Kimi"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.kimi.com/products/download"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://kimi-img.moonshot.cn/app/download/windows/kimi_3.2.23.exe",
+          "file_kind": "exe"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://kimi-img.moonshot.cn/app/download/mac/kimi_3.2.23.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://kimi-img.moonshot.cn/app/download/macos_x64/kimi_3.0.12.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "kimi",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.kimi.com/products/download"
+        }
+      ],
+      "version_info": {
+        "latest": "3.2.23",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:53:10Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://www.kimi.com/blog/kimi-k3-1-pro",
+        "title": "Kimi K3.1 Pro 技术博客"
+      }
+    },
+    "minimax-desktop": {
+      "display_name": "MiniMax Code",
+      "description": "MiniMax 官方桌面客户端（Electron），国内 / 国际双版本，同一安装包按语言区分。",
+      "homepage": "https://agent.minimax.cn/about",
+      "app_type": "gui",
+      "detect_names": [
+        "MiniMax Code",
+        "MiniMax"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://filecdn.minimax.chat/public/minimax-agent-prod/release/MiniMax%20Code%20Setup%203.1.9.exe",
+          "file_kind": "exe"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://filecdn.minimax.chat/public/minimax-agent-prod/release/MiniMax%20Code-3.1.9-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://filecdn.minimax.chat/public/minimax-agent-prod/release/MiniMax%20Code-3.1.9.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "minimax-ai/tap/minimax-code",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://agent.minimax.cn/about"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "minimax-ai/tap/minimax-code",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/MiniMax Code.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "MiniMax Code"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://agent.minimax.cn/about"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://filecdn.minimax.chat/public/minimax-agent-prod/release/MiniMax%20Code%20Setup%203.1.9.exe",
+          "file_kind": "exe"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://filecdn.minimax.chat/public/minimax-agent-prod/release/MiniMax%20Code-3.1.9-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://filecdn.minimax.chat/public/minimax-agent-prod/release/MiniMax%20Code-3.1.9.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "minimax-ai/tap/minimax-code",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://agent.minimax.cn/about"
+        }
+      ],
+      "version_info": {
+        "latest": "3.1.9",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:53:11Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://agent.minimax.cn/docs/changelog",
+        "title": "MiniMax Code 3.1.6 已发布"
+      }
+    },
+    "gemini-desktop": {
+      "display_name": "Gemini",
+      "description": "Google 官方 Gemini 桌面客户端（macOS Apple Silicon / Windows x64+ARM64）。",
+      "homepage": "https://gemini.google/desktop",
+      "app_type": "gui",
+      "detect_names": [
+        "Gemini",
+        "Gemini.app"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://dl.google.com/release2/j33ro/release/Gemini.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "google-gemini",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://gemini.google/desktop"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "google-gemini",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Gemini.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Gemini"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://gemini.google/desktop"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://dl.google.com/release2/j33ro/release/Gemini.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "google-gemini",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://gemini.google/desktop"
+        }
+      ],
+      "version_info": {
+        "latest": "1.138.0.1315",
+        "method": "brew_cask",
+        "fetched_at": "2026-10-31T21:53:14Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://gemini.google/release-notes",
+        "title": "Introducing Gemini 4 Argon: our frontier model for complex tasks"
+      }
+    },
+    "grok-bot": {
+      "display_name": "Grok Bot",
+      "description": "xAI 官方 Grok 桌面客户端，macOS / Windows / Linux（deb/rpm/AppImage）。",
+      "homepage": "https://x.ai/bot",
+      "app_type": "gui",
+      "detect_names": [
+        "Grok Bot"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://downloads.cursor.com/sand/stable/darwin-arm64/0.78.1/Grok_Bot_0.78.1.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "grok-bot",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://x.ai/bot"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "grok-bot",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Grok Bot.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Grok Bot"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://x.ai/bot"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://downloads.cursor.com/sand/stable/darwin-arm64/0.78.1/Grok_Bot_0.78.1.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "grok-bot",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://x.ai/bot"
+        }
+      ],
+      "version_info": {
+        "latest": "0.78.1",
+        "method": "brew_cask",
+        "fetched_at": "2026-10-31T21:53:17Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://x.ai/changelog/bot#v0.78.1",
+        "title": "Shopping cards and subscription templates (0.78.1)"
+      }
+    },
+    "copilot-app": {
+      "display_name": "GitHub Copilot",
+      "description": "GitHub 官方独立桌面客户端（非 VS Code 插件），macOS / Windows / Linux。",
+      "homepage": "https://github.com/features/ai/github-app",
+      "app_type": "gui",
+      "detect_names": [
+        "GitHub Copilot"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/features/ai/github-app"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/GitHub Copilot.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "GitHub Copilot"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/features/ai/github-app"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/features/ai/github-app"
+        }
+      ],
+      "version_info": {
+        "latest": null,
+        "method": "error",
+        "confidence": "none"
+      },
+      "latest_news": {
+        "url": "https://github.com/github/app/releases/tag/v1.1.33",
+        "title": "GitHub Copilot 1.1.33 已发布"
+      }
+    },
+    "qianwen-desktop": {
+      "display_name": "千问",
+      "description": "阿里千问官方桌面客户端（原「通义」品牌升级，tongyi.com 已 301 至 qianwen.com）。",
+      "homepage": "https://www.qianwen.com/download",
+      "app_type": "gui",
+      "detect_names": [
+        "千问",
+        "qwenclient"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://qianwen-portal-cdn.tongyi.com/native/app/2.3.2/win32/x64/qwenclient_setup_2.3.2.2603032250.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://qianwen-portal-cdn.tongyi.com/native/app/2.3.2/darwin/universal/qwenclient_setup_2.3.2.2603032246.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "qianwen",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.qianwen.com/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "qianwen",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/千问.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "千问"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.qianwen.com/download"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://qianwen-portal-cdn.tongyi.com/native/app/2.3.2/win32/x64/qwenclient_setup_2.3.2.2603032250.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://qianwen-portal-cdn.tongyi.com/native/app/2.3.2/darwin/universal/qwenclient_setup_2.3.2.2603032246.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "qianwen",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.qianwen.com/download"
+        }
+      ],
+      "version_info": {
+        "latest": "2.3.2",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:53:24Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "title": "千问桌面端（原通义）由阿里出品，更新动态以应用内公告为准。"
+      }
+    },
+    "perplexity-desktop": {
+      "display_name": "Perplexity",
+      "description": "Perplexity 官方桌面客户端（macOS 15+ / Windows，Windows 经微软商店体系）。",
+      "homepage": "https://www.perplexity.ai/platforms",
+      "app_type": "gui",
+      "detect_names": [
+        "Perplexity"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://macos-download.perplexity.ai/Perplexity.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "perplexity",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.perplexity.ai/platforms"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "perplexity",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Perplexity.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Perplexity"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.perplexity.ai/platforms"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://macos-download.perplexity.ai/Perplexity.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "perplexity",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.perplexity.ai/platforms"
+        }
+      ],
+      "version_info": {
+        "latest": "26.43.0",
+        "method": "brew_cask",
+        "fetched_at": "2026-10-31T21:53:25Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://www.perplexity.ai/blog",
+        "title": "Perplexity 桌面端随 Web 版同步更新，产品动态见官方博客。"
+      }
+    },
+    "chatglm-desktop": {
+      "display_name": "智谱清言",
+      "description": "智谱官方清言桌面客户端；编程向的 ZCode 为独立条目 zcode。",
+      "homepage": "https://chatglm.cn/download",
+      "app_type": "gui",
+      "detect_names": [
+        "智谱清言",
+        "ChatGLM"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://sfile.chatglm.cn/apk/xinyu/windows/chatglm_2.0.7_win32_x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://sfile.chatglm.cn/apk/xinyu/windows/chatglm_2.0.7_universal.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "chatglm",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://chatglm.cn/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "chatglm",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/智谱清言.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "智谱清言"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://chatglm.cn/download"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://sfile.chatglm.cn/apk/xinyu/windows/chatglm_2.0.7_win32_x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://sfile.chatglm.cn/apk/xinyu/windows/chatglm_2.0.7_universal.dmg",
+          "file_kind": "dmg"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "chatglm",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://chatglm.cn/download"
+        }
+      ],
+      "version_info": {
+        "latest": "2.0.7",
+        "method": "brew_cask",
+        "fetched_at": "2026-10-31T21:53:26Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "title": "智谱清言桌面端更新动态以应用内公告为准。"
+      }
+    },
+    "magpie": {
+      "display_name": "magpie",
+      "description": "菜单栏 AI 模型网关（Go）：本地互转 OpenAI / Anthropic / Gemini 协议，为 60+ AI 编码代理切换供应商，配额耗尽自动切换。",
+      "homepage": "https://usemagpie.ai",
+      "app_type": "auto",
+      "detect_names": [
+        "magpie"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "executable",
+          "platforms": 1,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1871/magpie-windows-amd64.exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "executable",
+          "platforms": 1,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1871/magpie-windows-arm64.exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.2463/magpie-windows-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.2463/magpie-windows-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.2463/magpie-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.2463/magpie-darwin-amd64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://usemagpie.ai"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/magpie.app"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "pwsh",
+            "powershell"
+          ],
+          "args": [
+            "-c",
+            "Remove-Item -Force \"$env:USERPROFILE\\.local\\bin\\magpie.exe\" -ErrorAction SilentlyContinue"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://usemagpie.ai"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "executable",
+          "platforms": 1,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1871/magpie-windows-amd64.exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "executable",
+          "platforms": 1,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1871/magpie-windows-arm64.exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.2463/magpie-windows-amd64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.2463/magpie-windows-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.2463/magpie-darwin-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.2463/magpie-darwin-amd64.dmg",
+          "file_kind": "dmg",
+          "arch": "x64"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://usemagpie.ai"
+        }
+      ],
+      "version_info": {
+        "latest": "0.1.2463",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:53:28Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://github.com/yetone/magpie/releases/tag/v0.1.1871",
+        "title": "magpie 0.1.1871 已发布"
+      }
+    },
+    "cc-switch": {
+      "display_name": "CC Switch",
+      "description": "Claude Code / Codex / Gemini CLI 等 10 个 AI 编程 CLI 的供应商配置切换器（Tauri 桌面应用）。",
+      "homepage": "https://github.com/farion1231/cc-switch",
+      "app_type": "gui",
+      "detect_names": [
+        "CC Switch",
+        "cc-switch"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/farion1231/cc-switch/releases"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/CC Switch.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "CC Switch"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/farion1231/cc-switch"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/farion1231/cc-switch/releases"
+        }
+      ],
+      "version_info": {
+        "latest": null,
+        "method": "error",
+        "confidence": "none"
+      },
+      "latest_news": {
+        "url": "https://github.com/farion1231/cc-switch/releases/tag/v4.0.21",
+        "title": "CC Switch v4.0.21"
+      }
+    },
+    "qoder-cli": {
+      "display_name": "Qoder CLI",
+      "description": "阿里 Qoder 官方终端智能体（命令 qodercli，Node ≥20），iFlow CLI 停服后的官方继任者；Qoder 桌面 IDE 为独立 GUI 软件，不含在内。",
+      "homepage": "https://qoder.com/cli",
+      "app_type": "cli",
+      "detect_names": [
+        "qodercli"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@qoder-ai/qodercli@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://qoder.com/install | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AcQBvAGQAZQByAC4AYwBvAG0ALwBpAG4AcwB0AGEAbABsAC4AcABzADEAIAB8ACAAaQBlAHgA"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@qoder-ai/qodercli"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@qoder-ai/qodercli"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@qoder-ai/qodercli@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://qoder.com/install | bash"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AcQBvAGQAZQByAC4AYwBvAG0ALwBpAG4AcwB0AGEAbABsAC4AcABzADEAIAB8ACAAaQBlAHgA"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://www.npmjs.com/package/@qoder-ai/qodercli"
+        }
+      ],
+      "version_info": {
+        "latest": "1.1.81",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:53:05Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://www.qoder.com/changelog",
+        "title": "阿里 Qoder 团队出品的终端编码智能体，更新日志见官网 Changelog 的 CLI 标签页。"
+      }
+    },
+    "lm-studio-bionic": {
+      "display_name": "LM Studio Bionic",
+      "description": "LM Studio 出品的独立智能体桌面应用（2026-07 发布），用本地或前沿开源模型创建文档、幻灯片、PDF 与软件；与 LM Studio 推理 GUI 为不同产品、独立版本线。",
+      "homepage": "https://lmstudio.ai/",
+      "app_type": "gui",
+      "detect_names": [
+        "Bionic"
+      ],
+      "recommended": false,
+      "purge_paths": [
+        {
+          "platforms": 2,
+          "path": "~/Library/Application Support/Bionic",
+          "description": "应用配置与会话数据"
+        },
+        {
+          "platforms": 2,
+          "path": "~/Library/Logs/Bionic",
+          "description": "运行日志"
+        },
+        {
+          "platforms": 2,
+          "path": "~/Library/Caches/ai.elementlabs.bionic",
+          "description": "缓存"
+        },
+        {
+          "platforms": 2,
+          "path": "~/Library/Preferences/ai.elementlabs.bionic.plist",
+          "description": "偏好设置"
+        }
+      ],
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://bionic-installers.lmstudio.ai/win32/x64/1.1.10-8/Bionic-1.1.10-8-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://bionic-installers.lmstudio.ai/win32/arm64/1.1.9-6/Bionic-1.1.9-6-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://bionic-installers.lmstudio.ai/darwin/arm64/1.1.10-8/Bionic-1.1.10-8-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://bionic-installers.lmstudio.ai/linux/x64/1.1.10-8/Bionic-1.1.10-8-x64.AppImage",
+          "file_kind": "appimage",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://bionic-installers.lmstudio.ai/linux/arm64/1.1.10-8/Bionic-1.1.10-8-arm64.AppImage",
+          "file_kind": "appimage",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "lm-studio-bionic",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ElementLabs.Bionic"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://lmstudio.ai/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "lm-studio-bionic",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ElementLabs.Bionic"
+        },
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Bionic.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Bionic"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://lmstudio.ai/"
+        }
+      ],
+      "kind": "software",
+      "latest_news": {
+        "url": "https://lmstudio.ai/changelog",
+        "title": "LM Studio Bionic 1.1.10 已发布"
+      },
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://bionic-installers.lmstudio.ai/win32/x64/1.1.10-8/Bionic-1.1.10-8-x64.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://bionic-installers.lmstudio.ai/win32/arm64/1.1.9-6/Bionic-1.1.9-6-arm64.exe",
+          "file_kind": "exe",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://bionic-installers.lmstudio.ai/darwin/arm64/1.1.10-8/Bionic-1.1.10-8-arm64.dmg",
+          "file_kind": "dmg",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://bionic-installers.lmstudio.ai/linux/x64/1.1.10-8/Bionic-1.1.10-8-x64.AppImage",
+          "file_kind": "appimage",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://bionic-installers.lmstudio.ai/linux/arm64/1.1.10-8/Bionic-1.1.10-8-arm64.AppImage",
+          "file_kind": "appimage",
+          "arch": "arm64"
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "lm-studio-bionic",
+          "args": [
+            "--cask"
+          ]
+        },
+        {
+          "kind": "package_manager",
+          "platforms": 1,
+          "manager": "winget",
+          "id": "ElementLabs.Bionic"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://lmstudio.ai/download"
+        }
+      ],
+      "version_info": {
+        "latest": "1.1.10-8",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:51:45Z",
+        "confidence": "high"
+      },
+      "country_code": "US"
+    },
+    "cline": {
+      "display_name": "Cline",
+      "description": "开源自主 AI 编程代理，支持 Plan/Act 双模式，通过文件读写、命令执行与浏览器协同完成复杂研发任务。",
+      "homepage": "https://cline.bot",
+      "app_type": "cli",
+      "detect_names": [
+        "cline"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "cline"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "cline@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://cline.bot"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "cline"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "cline"
+          ],
+          "requires": [
+            "npm"
+          ]
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "package_manager",
+          "platforms": 2,
+          "manager": "homebrew",
+          "id": "cline"
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "cline@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://cline.bot"
+        }
+      ],
+      "version_info": {
+        "latest": "3.0.74",
+        "method": "npm",
+        "fetched_at": "2026-10-31T21:53:32Z",
+        "confidence": "high"
+      },
+      "country_code": "US",
+      "latest_news": {
+        "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.74",
+        "title": "Cline 3.0.74 已发布"
+      }
+    },
+    "oh-my-pi": {
+      "display_name": "Oh My Pi",
+      "description": "终端 AI 编码代理（omp），Pi 的强大扩展分支，内置 LSP、AST 结构化编辑、多模型角色分工与 Git worktree 并行任务委派。",
+      "homepage": "https://omp.sh",
+      "app_type": "cli",
+      "detect_names": [
+        "omp"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "executable",
+          "platforms": 1,
+          "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.13.2/omp-windows-x64.exe",
+          "arch": "x64",
+          "install_location": "~/AppData/Local/omp"
+        },
+        {
+          "kind": "executable",
+          "platforms": 1,
+          "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.13.2/omp-windows-arm64.exe",
+          "arch": "arm64",
+          "install_location": "~/AppData/Local/omp"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://omp.sh/install | sh"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AbwBtAHAALgBzAGgALwBpAG4AcwB0AGEAbABsAC4AcABzADEAIAB8ACAAaQBlAHgA"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@oh-my-pi/pi-coding-agent@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/can1357/oh-my-pi/releases"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "uninstall",
+            "-g",
+            "@oh-my-pi/pi-coding-agent"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "~/.local/bin/omp",
+            "~/.omp"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "pwsh",
+            "powershell"
+          ],
+          "args": [
+            "-c",
+            "Remove-Item -Recurse -Force \"$env:LOCALAPPDATA\\omp\" -ErrorAction SilentlyContinue; Remove-Item -Force \"$env:USERPROFILE\\.local\\bin\\omp.exe\" -ErrorAction SilentlyContinue; Remove-Item -Recurse -Force \"$env:USERPROFILE\\.omp\" -ErrorAction SilentlyContinue"
+          ],
+          "requires": []
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "executable",
+          "platforms": 1,
+          "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.13.2/omp-windows-x64.exe",
+          "arch": "x64",
+          "install_location": "~/AppData/Local/omp"
+        },
+        {
+          "kind": "executable",
+          "platforms": 1,
+          "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.13.2/omp-windows-arm64.exe",
+          "arch": "arm64",
+          "install_location": "~/AppData/Local/omp"
+        },
+        {
+          "kind": "command",
+          "platforms": 6,
+          "program": "sh",
+          "args": [
+            "-c",
+            "curl -fsSL https://omp.sh/install | sh"
+          ],
+          "requires": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "command",
+          "platforms": 1,
+          "programs": [
+            "powershell"
+          ],
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-EncodedCommand",
+            "aQByAG0AIABoAHQAdABwAHMAOgAvAC8AbwBtAHAALgBzAGgALwBpAG4AcwB0AGEAbABsAC4AcABzADEAIAB8ACAAaQBlAHgA"
+          ],
+          "requires": []
+        },
+        {
+          "kind": "command",
+          "platforms": 7,
+          "program": "npm",
+          "args": [
+            "i",
+            "-g",
+            "@oh-my-pi/pi-coding-agent@latest"
+          ],
+          "requires": [
+            "npm"
+          ]
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/can1357/oh-my-pi/releases"
+        }
+      ],
+      "version_info": {
+        "latest": null,
+        "method": "error",
+        "confidence": "none"
+      },
+      "country_code": "US",
+      "latest_news": {
+        "url": "https://github.com/can1357/oh-my-pi/releases/tag/v18.13.2",
+        "title": "Oh My Pi 18.13.2 已发布"
+      }
+    },
+    "kiro-crew": {
+      "display_name": "Kiro Crew",
+      "description": "AWS Kiro 推出的持久化开源 AI Agent 工作空间，跨会话记忆上下文与工作习惯，通过 ACP 协议调度 kiro-cli 完成自主研发任务。",
+      "homepage": "https://kiro.dev/crew/",
+      "app_type": "gui",
+      "detect_names": [
+        "KiroCrew",
+        "Kiro Crew"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/kirodotdev/KiroCrew/releases"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/KiroCrew.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Kiro Crew"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://kiro.dev/crew/"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://github.com/kirodotdev/KiroCrew/releases"
+        }
+      ],
+      "version_info": {
+        "latest": null,
+        "method": "error",
+        "confidence": "none"
+      },
+      "country_code": "US",
+      "latest_news": {
+        "url": "https://github.com/kirodotdev/KiroCrew/releases/tag/v0.10.0",
+        "title": "Kiro Crew 0.10.0 已发布"
+      }
+    },
+    "qoder-desktop": {
+      "display_name": "Qoder",
+      "description": "阿里 Qoder 桌面应用：面向人机软件团队的 Agent 工作台，与 Qoder CLI（终端智能体）、Qoder IDE 为同品牌下的独立产品。",
+      "homepage": "https://qoder.com",
+      "app_type": "gui",
+      "detect_names": [
+        "Qoder"
+      ],
+      "recommended": false,
+      "install": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-win-x64-user.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-Installer-mac-arm64.zip",
+          "file_kind": "zip",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-Installer-mac-x64.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-linux-amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-linux-x86_64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://download.qoder.com.cn/qoder-app/releases/latest/Qoder-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://download.qoder.com.cn/qoder-app/releases/latest/Qoder-linux-aarch64.rpm",
+          "file_kind": "rpm",
+          "arch": "arm64"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://qoder.com/download"
+        }
+      ],
+      "uninstall": [
+        {
+          "kind": "command",
+          "platforms": 2,
+          "program": "rm",
+          "args": [
+            "-rf",
+            "/Applications/Qoder.app"
+          ]
+        },
+        {
+          "kind": "registry_uninstall",
+          "platforms": 1,
+          "display_name": "Qoder"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://qoder.com"
+        }
+      ],
+      "kind": "software",
+      "updatable": true,
+      "update": [
+        {
+          "kind": "installer",
+          "platforms": 1,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-win-x64-user.exe",
+          "file_kind": "exe",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-Installer-mac-arm64.zip",
+          "file_kind": "zip",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 2,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-Installer-mac-x64.zip",
+          "file_kind": "zip",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-linux-amd64.deb",
+          "file_kind": "deb",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://download.qoder.com/qoder-app/releases/latest/Qoder-linux-x86_64.rpm",
+          "file_kind": "rpm",
+          "arch": "x64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://download.qoder.com.cn/qoder-app/releases/latest/Qoder-linux-arm64.deb",
+          "file_kind": "deb",
+          "arch": "arm64"
+        },
+        {
+          "kind": "installer",
+          "platforms": 4,
+          "url": "https://download.qoder.com.cn/qoder-app/releases/latest/Qoder-linux-aarch64.rpm",
+          "file_kind": "rpm",
+          "arch": "arm64"
+        },
+        {
+          "kind": "website",
+          "platforms": 7,
+          "url": "https://qoder.com/download"
+        }
+      ],
+      "version_info": {
+        "latest": "0.5.1",
+        "method": "api",
+        "fetched_at": "2026-10-31T21:53:07Z",
+        "confidence": "high"
+      },
+      "latest_news": {
+        "url": "https://www.qoder.com/changelog",
+        "title": "Qoder 新一代 Agent 工作台桌面应用，更新日志见官网 Changelog 的 Qoder 标签页。"
+      }
+    }
+  }
+}

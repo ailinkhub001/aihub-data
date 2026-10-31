@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "checks": {
+    "git": {
+      "display_name": "Git",
+      "description": "Distributed version control system, the de facto standard for software development."
+    },
+    "node": {
+      "display_name": "Node.js",
+      "description": "V8-based JavaScript runtime."
+    },
+    "npm": {
+      "display_name": "npm",
+      "description": "Node package manager, installed alongside Node.js."
+    },
+    "python": {
+      "display_name": "Python",
+      "description": "General-purpose programming language widely used for scripting, data, and AI."
+    },
+    "pip": {
+      "display_name": "pip",
+      "description": "Python package installer, installed alongside Python."
+    },
+    "npmrc": {
+      "display_name": "npmrc optimization",
+      "description": "fund=false: disable funding prompts\naudit=false: skip install audit, speed up installs\nprogress=false: disable progress bar\nReduce npm logs, cut down steps, and cut tokens fed to AI.",
+      "file": {
+        "contains": [
+          {
+            "line": "fund=false",
+            "desc": "Disable funding prompts"
+          },
+          {
+            "line": "audit=false",
+            "desc": "Disable install-time security audit to speed up installs"
+          },
+          {
+            "line": "progress=false",
+            "desc": "Hide the download progress bar to reduce log noise"
+          }
+        ]
+      }
+    },
+    "rtk": {
+      "display_name": "RTK",
+      "description": "A toolkit for reducing token consumption. rtk injects itself into the AI software context — prefixing each command with rtk filters or trims its input, cutting AI input-token usage."
+    },
+    "pwsh": {
+      "display_name": "PowerShell 7",
+      "description": "Microsoft's modern cross-platform shell — far more capable than CMD and the built-in Windows PowerShell, with better compatibility."
+    },
+    "uv": {
+      "display_name": "uv",
+      "description": "Blazing-fast Python package and environment manager written in Rust; replaces pip / pipx / virtualenv and is a common dependency base for AI tooling."
+    },
+    "ffmpeg": {
+      "display_name": "FFmpeg",
+      "description": "The Swiss-army knife of audio/video processing: transcoding, cutting, streaming and frame extraction — a dependency of many AI multimodal tools."
+    },
+    "ripgrep": {
+      "display_name": "ripgrep",
+      "description": "Extremely fast code search (a modern grep replacement); recursive and .gitignore-aware by default, a common dependency of AI coding assistants."
+    },
+    "fd": {
+      "display_name": "fd",
+      "description": "Fast, intuitive file finder (a modern find replacement); ignores hidden and .gitignore'd files by default and walks directories in parallel — a common dependency of AI coding assistants."
+    },
+    "maple_fonts": {
+      "display_name": "Maple Fonts",
+      "description": "Maple Mono monospace coding font (Nerd Font, CN edition): rounded design, strict 2:1 CJK width, built-in terminal icons and CJK glyphs — great for terminals and editors."
+    }
+  }
+}

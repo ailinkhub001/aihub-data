@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "apps": {
+    "claude-cli": {
+      "display_name": "Claude Code",
+      "description": "Claude Code is an agentic coding tool developed by Anthropic.",
+      "latest_news": {
+        "title": "Claude Code 2.1.316 released"
+      }
+    },
+    "claude-desktop": {
+      "display_name": "Claude Desktop",
+      "description": "Claude desktop client.",
+      "latest_news": {
+        "title": "Claude Desktop 4.4212.0 released"
+      }
+    },
+    "antigravity": {
+      "display_name": "Antigravity",
+      "description": "Google's agentic coding CLI, command name is agy.",
+      "latest_news": {
+        "title": "Antigravity 1.4.9 released"
+      }
+    },
+    "antigravity-desktop": {
+      "display_name": "Antigravity Desktop",
+      "description": "Google's AI-native desktop client built on Electron, with multi-model chat and cloud agents.",
+      "latest_news": {
+        "title": "Plugin Marketplace in Antigravity"
+      }
+    },
+    "antigravity-ide": {
+      "display_name": "Antigravity IDE",
+      "description": "Google's AI-native IDE built on VS Code, with Gemini and cloud agents built in.",
+      "latest_news": {
+        "title": "Plugin Marketplace in Antigravity"
+      }
+    },
+    "workbuddy": {
+      "display_name": "WorkBuddy",
+      "description": "AI assistant and automation workbench integrating multi-source skills and MCP capabilities.",
+      "latest_news": {
+        "title": "WorkBuddy 5.9.4 released"
+      }
+    },
+    "codex": {
+      "display_name": "Codex CLI",
+      "description": "OpenAI's open-source lightweight terminal coding agent that can edit files, run commands locally, and integrate into your workflow.",
+      "latest_news": {
+        "title": "Codex CLI Release: 0.166.0"
+      }
+    },
+    "opencode": {
+      "display_name": "OpenCode",
+      "description": "Open-source AI coding agent by SST, usable in the terminal, desktop, or IDE, supporting 75+ models.",
+      "latest_news": {
+        "title": "OpenCode 2.2.5 released"
+      }
+    },
+    "gemini": {
+      "display_name": "Gemini CLI",
+      "description": "Google's open-source terminal AI agent that brings Gemini's capabilities directly to the command line.",
+      "latest_news": {
+        "title": "Gemini CLI 0.66.0 released"
+      }
+    },
+    "grok": {
+      "display_name": "Grok Build",
+      "description": "A terminal AI coding agent by xAI with a full-screen TUI; it understands codebases, performs edits and runs commands, and searches the web.",
+      "latest_news": {
+        "title": "Grok Build 1.0.70"
+      }
+    },
+    "deepseek-harness": {
+      "display_name": "DeepSeek Harness",
+      "description": "DeepSeek official AI Harness framework and Web service.",
+      "latest_news": {
+        "title": "DeepSeek Harness 0.2.2-alpha.2 released"
+      }
+    },
+    "openclaw": {
+      "display_name": "OpenClaw",
+      "description": "Multi-channel AI gateway with extensible message integrations.",
+      "latest_news": {
+        "title": "Come Build With Us: OpenClaw Focus Weeks"
+      }
+    },
+    "hermes": {
+      "display_name": "Hermes Agent",
+      "description": "Open-source autonomous AI agent by Nous Research, featuring persistent memory and custom skill creation.",
+      "latest_news": {
+        "title": "Hermes Agent v0.22.5"
+      }
+    },
+    "cursor": {
+      "display_name": "Cursor",
+      "description": "AI-native code editor built on VS Code, supporting repo-wide context editing.",
+      "latest_news": {
+        "title": "Agent SDK"
+      }
+    },
+    "lm-studio": {
+      "display_name": "LM Studio",
+      "description": "Desktop model browser and inference GUI with GGUF support.",
+      "latest_news": {
+        "title": "Splash Engine - the fastest local Qwen3.8 on Apple Silicon"
+      }
+    },
+    "chatgpt-desktop": {
+      "display_name": "ChatGPT Desktop",
+      "description": "OpenAI's official ChatGPT desktop client, with a global hotkey, voice conversations and local app integration.",
+      "latest_news": {
+        "title": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work"
+      }
+    },
+    "cherry-studio": {
+      "display_name": "Cherry Studio",
+      "description": "Cross-platform multi-model desktop client with a built-in knowledge base, MCP support and aggregation across multiple LLM providers.",
+      "latest_news": {
+        "title": "Cherry Studio 2.1.8 released"
+      }
+    },
+    "doubao": {
+      "display_name": "Doubao",
+      "description": "AI assistant desktop client from ByteDance, covering chat, AI coding and a browser sidebar.",
+      "latest_news": {
+        "title": "Doubao desktop by ByteDance; update notes are published in-app."
+      }
+    },
+    "zcode": {
+      "display_name": "ZCode",
+      "description": "AI coding desktop client from Zhipu, powered by the GLM model family.",
+      "latest_news": {
+        "title": "ZCode 3.16.3 released"
+      }
+    },
+    "kiro": {
+      "display_name": "Kiro",
+      "description": "AI IDE from AWS, built for spec-driven development.",
+      "latest_news": {
+        "title": "Approve for Me, Subcommand Approval Rules, and an ACP Engine Setting"
+      }
+    },
+    "trae": {
+      "display_name": "Trae",
+      "description": "AI-native IDE from ByteDance (International edition), integrated with Claude and GPT models.",
+      "latest_news": {
+        "title": "TRAE v3.6.1 ~ 3.6.4 are released"
+      }
+    },
+    "trae-cn": {
+      "display_name": "Trae CN",
+      "description": "AI-native IDE from ByteDance (China edition), optimized for Chinese developers with Doubao and DeepSeek.",
+      "latest_news": {
+        "title": "TRAE v3.4.1 ～ 3.4.4 版本正式发布"
+      }
+    },
+    "pi": {
+      "display_name": "Pi Agent Harness",
+      "description": "Open-source terminal coding agent by earendil-works that understands code from repo context, performs edits and runs commands, with a local sandbox and multi-model support.",
+      "latest_news": {
+        "title": "Pi Agent Harness 1.4.0 released"
+      }
+    },
+    "kimi-code": {
+      "display_name": "Kimi Code",
+      "description": "Moonshot's official agentic coding CLI (command kimi, Node >= 22.19), with account-login and API-key modes.",
+      "latest_news": {
+        "title": "Kimi Code 2.3.3 released"
+      }
+    },
+    "minimax-code": {
+      "display_name": "MiniMax Code CLI",
+      "description": "MiniMax's official terminal coding agent (command mcode), MIT-licensed open source.",
+      "latest_news": {
+        "title": "MiniMax Code 0.6.5"
+      }
+    },
+    "mimo-code": {
+      "display_name": "MiMo Code",
+      "description": "Xiaomi's official coding CLI (command mimo), free to use out of the box with Xiaomi's multimodal models.",
+      "latest_news": {
+        "title": "MiMo Code 0.1.16 released"
+      }
+    },
+    "qwen-code": {
+      "display_name": "Qwen Code",
+      "description": "Alibaba's official coding CLI (command qwen), powered by the Qwen model family.",
+      "latest_news": {
+        "title": "Qwen Code 0.26.2 released"
+      }
+    },
+    "copilot-cli": {
+      "display_name": "GitHub Copilot CLI",
+      "description": "GitHub's official Copilot command-line agent (command copilot); requires a GitHub account with a Copilot plan (unavailable in mainland China).",
+      "latest_news": {
+        "title": "GitHub Copilot CLI 1.0.105 released"
+      }
+    },
+    "kimi-desktop": {
+      "display_name": "Kimi",
+      "description": "Moonshot's official desktop client; the Apple Silicon build ships the Kimi Work office suite, the Intel build Kimi Chat.",
+      "latest_news": {
+        "title": "Kimi K3.1 Pro 技术博客"
+      }
+    },
+    "minimax-desktop": {
+      "display_name": "MiniMax Code",
+      "description": "MiniMax's official desktop client (Electron); CN and international builds share one installer.",
+      "latest_news": {
+        "title": "MiniMax Code 3.1.6 released"
+      }
+    },
+    "gemini-desktop": {
+      "display_name": "Gemini",
+      "description": "Google's official Gemini desktop client (macOS Apple Silicon / Windows x64+ARM64).",
+      "latest_news": {
+        "title": "Introducing Gemini 4 Argon: our frontier model for complex tasks"
+      }
+    },
+    "grok-bot": {
+      "display_name": "Grok Bot",
+      "description": "xAI's official Grok desktop client for macOS, Windows and Linux (deb/rpm/AppImage).",
+      "latest_news": {
+        "title": "Shopping cards and subscription templates (0.78.1)"
+      }
+    },
+    "copilot-app": {
+      "display_name": "GitHub Copilot",
+      "description": "GitHub's standalone desktop client (not the VS Code extension) for macOS, Windows and Linux.",
+      "latest_news": {
+        "title": "GitHub Copilot 1.1.33 released"
+      }
+    },
+    "qianwen-desktop": {
+      "display_name": "Qianwen",
+      "description": "Alibaba's official Qianwen desktop client (the rebranded Tongyi).",
+      "latest_news": {
+        "title": "Qwen desktop (formerly Tongyi) by Alibaba; update notes are published in-app."
+      }
+    },
+    "perplexity-desktop": {
+      "display_name": "Perplexity",
+      "description": "Perplexity's official desktop client (macOS 15+ / Windows via the Microsoft Store).",
+      "latest_news": {
+        "title": "The desktop app tracks the web product; news is on the official blog."
+      }
+    },
+    "chatglm-desktop": {
+      "display_name": "ChatGLM",
+      "description": "Zhipu's official ChatGLM desktop client; the coding-oriented ZCode is a separate entry.",
+      "latest_news": {
+        "title": "ChatGLM desktop by Zhipu; update notes are published in-app."
+      }
+    },
+    "magpie": {
+      "display_name": "magpie",
+      "description": "A menu-bar AI model gateway (Go): translates between the OpenAI / Anthropic / Gemini protocols locally and switches providers for 60+ coding agents, with automatic account failover.",
+      "latest_news": {
+        "title": "magpie 0.1.1871 released"
+      }
+    },
+    "cc-switch": {
+      "display_name": "CC Switch",
+      "description": "A provider-config switcher (Tauri desktop app) for Claude Code, Codex, Gemini CLI and seven more coding CLIs.",
+      "latest_news": {
+        "title": "CC Switch v4.0.21"
+      }
+    },
+    "qoder-cli": {
+      "display_name": "Qoder CLI",
+      "description": "Alibaba's official terminal coding agent (command qodercli, Node >= 20), the official successor to the retired iFlow CLI; the Qoder desktop IDE is a separate GUI app and is not covered here.",
+      "latest_news": {
+        "title": "Terminal coding agent from Alibaba's Qoder team; see the CLI tab of the official changelog."
+      }
+    },
+    "qoder-desktop": {
+      "display_name": "Qoder",
+      "description": "Alibaba's Qoder desktop app: the agent workbench for human and AI software teams, a standalone product alongside Qoder CLI (terminal agent) and Qoder IDE.",
+      "latest_news": {
+        "title": "The new-generation Qoder agent workbench; see the Qoder tab of the official changelog."
+      }
+    },
+    "opencode-desktop": {
+      "display_name": "OpenCode Desktop",
+      "description": "The official OpenCode desktop client (GUI), a graphical shell over the terminal OpenCode with multi-model and local session management.",
+      "latest_news": {
+        "title": "OpenCode Desktop 2.2.5 released"
+      }
+    },
+    "lm-studio-bionic": {
+      "display_name": "LM Studio Bionic",
+      "description": "LM Studio's standalone agent desktop app (released 2026-07): create documents, slides, PDFs and software with local or frontier open models. A separate product and version line from the LM Studio inference GUI.",
+      "latest_news": {
+        "title": "LM Studio Bionic 1.1.10 released"
+      }
+    },
+    "cline": {
+      "display_name": "Cline",
+      "description": "Open-source autonomous coding agent with Plan/Act modes, capable of creating and editing files, running commands, and coordinating complex dev workflows.",
+      "latest_news": {
+        "title": "Cline 3.0.74 released"
+      }
+    },
+    "oh-my-pi": {
+      "display_name": "Oh My Pi",
+      "description": "Feature-rich terminal AI coding agent (omp), an enhanced fork of Pi with built-in LSP, AST structural editing, multi-model roles, and parallel worktree subagent delegation.",
+      "latest_news": {
+        "title": "Oh My Pi 18.13.2 released"
+      }
+    },
+    "kiro-crew": {
+      "display_name": "Kiro Crew",
+      "description": "Persistent, open-source AI agent workspace by AWS Kiro that remembers context across sessions and orchestrates kiro-cli over ACP for autonomous development.",
+      "latest_news": {
+        "title": "Kiro Crew 0.10.0 released"
+      }
+    }
+  }
+}
