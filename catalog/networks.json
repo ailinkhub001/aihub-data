@@ -1,0 +1,560 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-09T05:42:16Z",
+  "ip_info": [
+    {
+      "link": "https://ipwho.is",
+      "path": "",
+      "method": "GET",
+      "params": {},
+      "parse": {
+        "format": "json",
+        "ip": "ip",
+        "country_code": "country_code"
+      }
+    },
+    {
+      "link": "https://ipv4.ident.me",
+      "path": "/json",
+      "method": "GET",
+      "params": {},
+      "parse": {
+        "format": "json",
+        "ip": "ip",
+        "country_code": "cc"
+      }
+    },
+    {
+      "link": "https://ipv6.ident.me",
+      "path": "/json",
+      "method": "GET",
+      "params": {},
+      "parse": {
+        "format": "json",
+        "ip": "ip",
+        "country_code": "cc"
+      }
+    },
+    {
+      "link": "https://ipv4.wtfismyip.com",
+      "path": "/json",
+      "method": "GET",
+      "params": {},
+      "parse": {
+        "format": "json",
+        "ip": "YourFuckingIPAddress",
+        "country_code": "YourFuckingCountryCode"
+      }
+    },
+    {
+      "link": "https://ipv6.wtfismyip.com",
+      "path": "/json",
+      "method": "GET",
+      "params": {},
+      "parse": {
+        "format": "json",
+        "ip": "YourFuckingIPAddress",
+        "country_code": "YourFuckingCountryCode"
+      }
+    }
+  ],
+  "winget_mirrors": [
+    {
+      "link": "https://mirrors.ustc.edu.cn/winget-source",
+      "note": "中科大 USTC 镜像",
+      "setup_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "remove",
+            "--disable-interactivity",
+            "winget"
+          ]
+        },
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "add",
+            "winget",
+            "https://mirrors.ustc.edu.cn/winget-source",
+            "--trust-level",
+            "trusted",
+            "--accept-source-agreements"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "list"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://mirror.nju.edu.cn/winget-source",
+      "note": "南京大学 NJU 镜像",
+      "setup_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "remove",
+            "--disable-interactivity",
+            "winget"
+          ]
+        },
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "add",
+            "winget",
+            "https://mirror.nju.edu.cn/winget-source",
+            "--trust-level",
+            "trusted",
+            "--accept-source-agreements"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "list"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://mirrors.cernet.edu.cn/winget-source",
+      "note": "CERNET 教育网镜像",
+      "setup_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "remove",
+            "--disable-interactivity",
+            "winget"
+          ]
+        },
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "add",
+            "winget",
+            "https://mirrors.cernet.edu.cn/winget-source",
+            "--trust-level",
+            "trusted",
+            "--accept-source-agreements"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "list"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://mirrors.xjtu.edu.cn/winget-source",
+      "note": "西安交通大学 XJTU 镜像",
+      "setup_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "remove",
+            "--disable-interactivity",
+            "winget"
+          ]
+        },
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "add",
+            "winget",
+            "https://mirrors.xjtu.edu.cn/winget-source",
+            "--trust-level",
+            "trusted",
+            "--accept-source-agreements"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "list"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://mirror.nyist.edu.cn/winget-source",
+      "note": "南阳理工学院 NYIST 镜像",
+      "setup_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "remove",
+            "--disable-interactivity",
+            "winget"
+          ]
+        },
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "add",
+            "winget",
+            "https://mirror.nyist.edu.cn/winget-source",
+            "--trust-level",
+            "trusted",
+            "--accept-source-agreements"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "winget",
+          "args": [
+            "source",
+            "list"
+          ]
+        }
+      ]
+    }
+  ],
+  "nodejs_mirrors": [
+    {
+      "link": "https://mirrors.nju.edu.cn/nodejs-release",
+      "note": "南京大学 NJU 镜像"
+    },
+    {
+      "link": "https://mirrors.aliyun.com/nodejs-release",
+      "note": "阿里云镜像"
+    },
+    {
+      "link": "https://mirrors.cloud.tencent.com/nodejs-release",
+      "note": "腾讯云镜像"
+    },
+    {
+      "link": "https://mirrors.huaweicloud.com/nodejs/",
+      "note": "华为云镜像"
+    },
+    {
+      "link": "https://mirrors.tuna.tsinghua.edu.cn/nodejs-release",
+      "note": "清华大学 TUNA 镜像"
+    }
+  ],
+  "npm_mirrors": [
+    {
+      "link": "https://registry.npmmirror.com",
+      "note": "阿里 npmmirror 镜像",
+      "setup_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "registry",
+            "https://registry.npmmirror.com"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "get",
+            "registry"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://r.cnpmjs.org",
+      "note": "cnpm 镜像",
+      "setup_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "registry",
+            "https://r.cnpmjs.org"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "get",
+            "registry"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "http://mirrors.tencent.com/npm/",
+      "note": "腾讯镜像",
+      "setup_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "registry",
+            "http://mirrors.tencent.com/npm/"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "get",
+            "registry"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://mirrors.cloud.tencent.com/npm",
+      "note": "腾讯云镜像",
+      "setup_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "registry",
+            "https://mirrors.cloud.tencent.com/npm"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "get",
+            "registry"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://repo.huaweicloud.com/repository/npm",
+      "note": "华为云镜像",
+      "setup_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "set",
+            "registry",
+            "https://repo.huaweicloud.com/repository/npm"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "npm",
+          "args": [
+            "config",
+            "get",
+            "registry"
+          ]
+        }
+      ]
+    }
+  ],
+  "python_mirrors": [
+    {
+      "link": "https://mirrors.aliyun.com/python-release",
+      "note": "阿里云镜像"
+    },
+    {
+      "link": "https://mirrors.huaweicloud.com/python/",
+      "note": "华为云镜像"
+    },
+    {
+      "link": "https://mirrors.tuna.tsinghua.edu.cn/python",
+      "note": "清华大学 TUNA 镜像"
+    },
+    {
+      "link": "http://mirrors.ustc.edu.cn/python",
+      "note": "中科大 USTC 镜像"
+    }
+  ],
+  "pip_mirrors": [
+    {
+      "link": "https://pypi.tuna.tsinghua.edu.cn/simple",
+      "note": "清华大学 TUNA 镜像",
+      "setup_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "set",
+            "global.index-url",
+            "https://pypi.tuna.tsinghua.edu.cn/simple"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "get",
+            "global.index-url"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://mirrors.aliyun.com/pypi/simple",
+      "note": "阿里云镜像",
+      "setup_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "set",
+            "global.index-url",
+            "https://mirrors.aliyun.com/pypi/simple"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "get",
+            "global.index-url"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://pypi.mirrors.ustc.edu.cn/simple",
+      "note": "中科大 USTC 镜像",
+      "setup_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "set",
+            "global.index-url",
+            "https://pypi.mirrors.ustc.edu.cn/simple"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "get",
+            "global.index-url"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://mirrors.cloud.tencent.com/pypi/simple",
+      "note": "腾讯云镜像",
+      "setup_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "set",
+            "global.index-url",
+            "https://mirrors.cloud.tencent.com/pypi/simple"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "get",
+            "global.index-url"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "https://mirrors.163.com/pypi/simple",
+      "note": "网易 163 镜像",
+      "setup_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "set",
+            "global.index-url",
+            "https://mirrors.163.com/pypi/simple"
+          ]
+        }
+      ],
+      "verify_commands": [
+        {
+          "program": "pip",
+          "args": [
+            "config",
+            "get",
+            "global.index-url"
+          ]
+        }
+      ]
+    }
+  ],
+  "github_proxy_probe": "https://raw.githubusercontent.com/octocat/Hello-World/master/README",
+  "github_proxy": [
+    {
+      "link": "https://v4.gh-proxy.org",
+      "note": "优选加速服务器，仅支持 IPv4 网络智能解析"
+    },
+    {
+      "link": "https://axisnow.gh-proxy.org",
+      "note": "axisnow 三网优选节点，仅支持 IPv4 网络"
+    },
+    {
+      "link": "https://gh-proxy.org",
+      "note": "主站加速，全球高速分发"
+    },
+    {
+      "link": "https://v6.gh-proxy.org",
+      "note": "优选加速服务器，支持 IPv6/IPv4 网络智能解析"
+    },
+    {
+      "link": "https://cdn.gh-proxy.org",
+      "note": "Fastly CDN 节点加速"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "generated_at": "2026-11-06T15:27:26Z",
+  "revision": "2026-11-06T15:27:26Z",
+  "app": {
+    "name": "aihub",
+    "version": "0.5.15",
+    "channel": "stable",
+    "critical": false,
+    "published_at": "2026-11-06T15:27:26Z",
+    "notes": "# 发布说明\n\nmacOS 用户须知：安装包未经 Apple 开发者签名，首次打开若提示「已损坏，无法打开」，请在终端执行一次 xattr -cr /Applications/AIHub.app。通过应用内更新安装的包已自动清除该标记；覆盖安装新版本后会重新带上，每个版本需手动执行一次。\n\n---\n\n## 0.5.15+32 供应商体系升级：14 个 AI 工具一键接管\n\n### ✨ 新功能\n\n- 供应商体系全面升级：一个供应商现在可以登记多个接入地址（协议与地址分开配置），像智谱的「按量计费」与「Coding 套餐」会各自成为独立条目，AIHub 按每个工具需要的格式自动挑对的那一个。\n- 受管 AI 工具从 7 个扩到 14 个：新增 Gemini CLI、Grok Build、Kimi Code、MiniMax Code、Oh My Pi、Claude Desktop；Antigravity 也能在终端矩阵里自动带上你的供应商凭据，无需手改配置文件。\n- 应用前先校验协议：工具不认的格式会当场拦住并说明双方格式差异，不会再写出一个工具读不懂的配置；一键应用的结果统一汇总为「N 成功 / M 跳过 / K 失败」。\n- 预设供应商目录扩到 30 条精选，并补齐官方供应商的 Gemini 接入方式——Gemini CLI 与 Antigravity 现在也能直接绑定官方供应商。\n- 官方供应商卡片的模型列表不再刷新一次乱一次，顺序固定为一致的字符序。\n- API 密钥卡片现在会标出这把密钥所属的分组，一眼看清它和别的密钥有什么不同；点开卡片里的模型列表，看到的就是这把密钥真正能调用的模型。\n- 一键应用弹窗里被禁用的工具，原因改由警告图标 + 悬浮提示展示，窄窗口下不再被省略号截断。\n\n### 🔧 稳定性与修复\n\n- 修复部分账号下所有密钥都显示同一份模型列表、换了绑定的密钥列表却纹丝不动的问题。现在每把密钥的模型列表按它自己的实际权限单独取，和服务端看到的完全一致，切换密钥即刻更新。\n- 刷新模型列表时若网络或账号接口临时异常，不再把已有的列表清空，会保留上一次的有效结果。\n- 修复部分工具连续应用两次后无法再次应用的问题（Hermes 配置文件被自家校验拒绝）。\n- 修复使用硬链接管理配置的工具（rsnapshot、Orca 等）在写入后链接关系被打散、变成两份独立文件的问题，现在改为就地写入。\n- 修复 Claude Desktop 模型名不合规时被静默丢弃、导致模型列表为空且毫无提示的问题，现在会提前拦住并点名不合规的模型。\n- 修复 Antigravity 终端矩阵没有注入供应商凭据、且失败完全无声的问题，现在每次注入都有可查记录。\n- 账号相关操作不再每次都重新打开数据库，开关应用与切换页面时的日志噪音与延迟一并消失。\n- 修复部分英文界面文案在窄区域内被截断、以及测试编译产生警告的遗留问题。\n"
+  },
+  "artifacts": [
+    {
+      "path": "catalog/ai_apps.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps.json",
+      "sha256": "f13dbda41174f47599b5ffa3a77595517db3a37a0bfb0a3d64d3aa8cc18e75cb",
+      "size": 207693,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/ai_apps_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps_en.json",
+      "sha256": "7a6b2dd84538571910423915f366570ca8fdb2f0e31db9d9758b671c14626bba",
+      "size": 12719,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/alias_map.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/alias_map.json",
+      "sha256": "efc580b141481b3dde57e56c06f9ceed234c7106e0990821ac3f3d1ec84da310",
+      "size": 2190,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check.json",
+      "sha256": "b18842b457fd739e94ba2e1d80932e4ebe297df0dfa48a51ba816dd5b1800db5",
+      "size": 57061,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check_en.json",
+      "sha256": "f460e74459f18afb5b1c57ef91d1e673e865ba6fd808af4246c973f1b80f197a",
+      "size": 3074,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/networks.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/networks.json",
+      "sha256": "2c9bbed0676d358e2f2b0558c04abaf8f41ed2e2af2f4ebf8fd86f34c0f4435a",
+      "size": 12215,
+      "kind": "catalog"
+    },
+    {
+      "path": "aihub-0.5.15-windows-x64-setup.exe",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.15/aihub-0.5.15-windows-x64-setup.exe",
+      "sha256": "f8faf5cf6bcb8a9475604333eba5e5ea71dbb8ded5c1f517358c37037929e230",
+      "size": 20139489,
+      "kind": "installer",
+      "os": "windows",
+      "arch": "x64"
+    }
+  ],
+  "signature": {
+    "algo": "ed25519",
+    "sig": "hZxdNy76pQxRPqfwVVrVPvxeZHbi+UbBowwh3PBupAyvGB2+SBe1IFOXYRFpPmFOXF7BK1bs9UNW1Sk7MbpHAw==",
+    "key_id": "f62358ad"
+  }
+}
