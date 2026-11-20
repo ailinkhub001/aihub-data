@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "generated_at": "2026-11-20T17:26:24Z",
+  "revision": "2026-11-20T17:26:24Z",
+  "app": {
+    "name": "aihub",
+    "version": "0.5.18",
+    "channel": "stable",
+    "critical": false,
+    "published_at": "2026-11-20T17:26:24Z",
+    "notes": "# 发布说明\n\n> macOS 用户须知：安装包未经 Apple 开发者签名，首次打开若提示「已损坏，无法打开」，请在终端执行一次 `xattr -cr /Applications/AIHub.app`。通过应用内更新安装的包已自动清除该标记；覆盖安装新版本后会重新带上，每个版本需手动执行一次。\n\n---\n\n## 0.5.18+35 装没装成说得清，卡片改完就刷新\n\n### 🔧 稳定性与修复\n\n- 安装与更新结果的判定口径统一了一回：先看版本号，读不到版本就看目标文件是否真的落地，说成功就是真的能用。\n- 修好更新被装到另一个渠道、留下两份副本的问题——现在沿用你选中那份的安装渠道原地更新。\n- 修复 AI 软件页 / 环境检查页的卡片在安装、更新、卸载结束后偶发不自动刷新、要手动点一下才更新的问题。\n- 修复 CodeBuddy 这类桌面软件明明装的是新版、却一直提示「可更新」的误判。\n- 单次安装或更新的等待上限由 10 分钟放宽到 1 小时，慢网络下的大安装包不再中途被判失败。\n\n### ✨ 界面与交互\n\n- 软件卡片上的长名称改为最多两行显示，鼠标悬停可看完整名称，不再被省略号截断。\n- 错误弹窗里的复制按钮不再在点击前就写着「已复制到剪贴板」，复制成功后才提示。\n"
+  },
+  "artifacts": [
+    {
+      "path": "catalog/ai_apps.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps.json",
+      "sha256": "04b5c7329bfc720f68e83b488c90d1e17057d61377adcee3dddf5bdbeb72c786",
+      "size": 223296,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/ai_apps_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps_en.json",
+      "sha256": "318a8246bc4123d6edb2b21e39d8456c925d75473e0c96d01eed824466c1e017",
+      "size": 13826,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/alias_map.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/alias_map.json",
+      "sha256": "08dadd40aeb84b7f5c9c163ea7c36d1b0fe000c8e6f42bc5358612079a0feb64",
+      "size": 2594,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check.json",
+      "sha256": "837c39c41175231231b1fb19dc75f2a6d57ec8df7b0622408ad3b320459a54be",
+      "size": 58243,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check_en.json",
+      "sha256": "f460e74459f18afb5b1c57ef91d1e673e865ba6fd808af4246c973f1b80f197a",
+      "size": 3074,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/networks.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/networks.json",
+      "sha256": "2c9bbed0676d358e2f2b0558c04abaf8f41ed2e2af2f4ebf8fd86f34c0f4435a",
+      "size": 12215,
+      "kind": "catalog"
+    },
+    {
+      "path": "aihub-0.5.18-windows-x64-setup.exe",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.18/aihub-0.5.18-windows-x64-setup.exe",
+      "sha256": "03a5a7da940afc931a15a4bdf0a7eb326d45562f7def65ab640c1b1f77ce265c",
+      "size": 20246508,
+      "kind": "installer",
+      "os": "windows",
+      "arch": "x64"
+    }
+  ],
+  "signature": {
+    "algo": "ed25519",
+    "sig": "VdQ/DDYBPz8Fjs9F1eHzIL8iLGyMpdgrVX6BV+R63H9pBELzPHUdmhTzVb5JqzHaAoQYRi9RWsdb/6Lt3PgKCQ==",
+    "key_id": "f62358ad"
+  }
+}
