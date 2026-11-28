@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "generated_at": "2026-11-28T15:55:30Z",
+  "revision": "2026-11-28T15:55:30Z",
+  "app": {
+    "name": "aihub",
+    "version": "0.5.19",
+    "channel": "stable",
+    "critical": false,
+    "published_at": "2026-11-28T15:55:30Z",
+    "notes": "# 发布说明\n\n> macOS 用户须知：安装包未经 Apple 开发者签名，首次打开若提示「已损坏，无法打开」，请在终端执行一次 `xattr -cr /Applications/AIHub.app`。通过应用内更新安装的包已自动清除该标记；覆盖安装新版本后会重新带上，每个版本需手动执行一次。\n>\n> Windows 用户须知：Microsoft Defender 可能将 AIHub 误报为 Trojan:Win32/Bearfoos.A!ml——这是针对未签名新程序的机器学习启发式误报（AIHub 需自动安装各类 AI 软件官方脚本，易被判定为侵入行为，软件本身无任何有害行为），遇到时请在「Windows 安全中心 → 保护历史记录」中还原并信任即可正常使用；后续接入代码签名证书后将不再报毒。\n\n---\n\n## 0.5.19+36 账户页全面翻新，工具绑定写得更准\n\n### ✨ 新功能\n\n- 「AI 账号」页重新设计：登录与注册改为宽屏双栏品牌版式、窄屏居中单卡，支持邮箱验证码注册与协议确认，站点开关与浏览器校验降级也都处理了。\n- 「账户用量」升级为单片式仪表盘：一次聚合最近 30 天数据，含 7 天 / 30 天用量趋势、模型排行、额度与订阅卡片，并可一键跳到网页查看明细。\n- 登录会话改为独立弹窗：当前设备置顶、按活跃时间倒序、每页 6 条，清楚显示登录方式与设备图标。\n- 供应商与工具绑定覆盖 14 款 AI 工具，按各工具最新官方格式写入。新增三层模型参数体系：思考强度 7 档、上下文与压缩阈值按所选模型自动取值，目录里没有的模型会明确标注，而不是悄悄猜一个数值。\n- 写入前会校验供应商协议与目标工具是否匹配，不兼容时直接说明双方格式差异，不再写完才出问题。\n- 首次绑定会留一份接管快照，可随时还原到绑定前的配置；切换或撤销绑定会顺带清理残留的冲突配置。\n- 网页矩阵与终端矩阵的标签栏标签变多时不再互相挤压：可横向滚动，左右翻页箭头按需出现，新建按钮固定不动，切换工作台后选中的标签会自动滚到完整可见的位置。\n\n### 🔧 稳定性与修复\n\n- 版本号读取统一到一套策略：此前多处各自实现，部分工具（如 ffmpeg）版本号读不到、或输出一长就把自己卡死被判超时；现在统一处理并放宽到 5 秒，读到的版本更可靠，慢启动的 agent 工具也不再漏读。\n- 关于页在「有新版本」时同样显示发布说明，此前只有「已是最新」时才显示。\n- 关于页「立即同步」现在会真正重新拉取最新目录清单，此前点它并不会更新目录数据。\n- 工具绑定列表固定按工具默认顺序排列，不再因同步状态上下跳动。\n- 日志里环境变量的连接串凭据（比如数据库地址中的密码）已脱敏。\n- 移除了一批只会产生噪音的键盘与滚轮诊断日志，开发版后台输出更干净。\n\n### 📦 发布与分发\n\n- Windows 安装包与核心程序文件现在默认带 Authenticode 数字签名（含时间戳）：本次使用项目开发证书自签，后续换成商业证书无需再改流程，签名日志与校验结果随发布记录留档。\n- Windows 打包新增「先签程序文件、再打安装包、最后签安装包」的两阶段签名，安装包内的文件本身也是已签名状态。\n- 目录数据随本版更新：AI 软件与环境工具的最新版本号与官方下载直链已刷新，安装配方无变化。\n"
+  },
+  "artifacts": [
+    {
+      "path": "catalog/ai_apps.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps.json",
+      "sha256": "efd83b65eb8906495da9e7be31e8daf8cacaa2254f6e2503c5caa07900dbae18",
+      "size": 234218,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/ai_apps_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/ai_apps_en.json",
+      "sha256": "8eb67312150444fca9da4023a031d9d4100173fcbe3e9f03c27d1704febb77e6",
+      "size": 13843,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/alias_map.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/alias_map.json",
+      "sha256": "08dadd40aeb84b7f5c9c163ea7c36d1b0fe000c8e6f42bc5358612079a0feb64",
+      "size": 2594,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check.json",
+      "sha256": "90beefb1e35126b91be1b6ff8beb80dbdd68cf1fd34951edf4e3c9a83b63efc5",
+      "size": 58423,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/env_check_en.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/env_check_en.json",
+      "sha256": "f460e74459f18afb5b1c57ef91d1e673e865ba6fd808af4246c973f1b80f197a",
+      "size": 3074,
+      "kind": "catalog"
+    },
+    {
+      "path": "catalog/networks.json",
+      "url": "https://raw.githubusercontent.com/ailinkhub001/aihub-data/main/catalog/networks.json",
+      "sha256": "2c9bbed0676d358e2f2b0558c04abaf8f41ed2e2af2f4ebf8fd86f34c0f4435a",
+      "size": 12215,
+      "kind": "catalog"
+    },
+    {
+      "path": "aihub-0.5.19-macos-arm64.dmg",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.19/aihub-0.5.19-macos-arm64.dmg",
+      "sha256": "a5787b153f61292116ce82587e5da46f4ce5a113336946e9722a461f59879d25",
+      "size": 23252070,
+      "kind": "installer",
+      "os": "macos",
+      "arch": "arm64"
+    },
+    {
+      "path": "aihub-0.5.19-macos-x64.dmg",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.19/aihub-0.5.19-macos-x64.dmg",
+      "sha256": "bca657fc687943bcc367acabce43a567d17bd9021ec53b6443777dc5c92709be",
+      "size": 25892353,
+      "kind": "installer",
+      "os": "macos",
+      "arch": "x64"
+    },
+    {
+      "path": "aihub-0.5.19-windows-x64-setup.exe",
+      "url": "https://github.com/ailinkhub001/aihub-data/releases/download/v0.5.19/aihub-0.5.19-windows-x64-setup.exe",
+      "sha256": "9b4d973983de95c7aefdadef2f782ce324988f861ce3ee98625eada72f6079c4",
+      "size": 20543280,
+      "kind": "installer",
+      "os": "windows",
+      "arch": "x64"
+    }
+  ],
+  "signature": {
+    "algo": "ed25519",
+    "sig": "NRaTfAfsiSkc243LNNN4uipsGU7uchBsYPLVeIt1F1toz1dhHR3HZIwAc9yG9NJXSm6uKQ4OB8o/U5K5ThOsDQ==",
+    "key_id": "f62358ad"
+  }
+}
